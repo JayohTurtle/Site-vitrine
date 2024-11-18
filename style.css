@@ -1,0 +1,266 @@
+/* Réinitialiser les marges et les paddings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0B0D17;
+}
+body{
+    font-family:"Montserrat", sans-serif;/*police utilisée*/
+    color:white;/*couleur de base du texte*/
+    background-color: #0B0D17
+}
+
+.menu{
+    display: flex;
+}
+.container{
+    max-width: 1440px;/*la class container ne dépassera pas 1440px si on agrandit l'écran*/
+    margin: 0 auto;/*les éléments restent centrés*/
+}
+.text-center{
+    text-align: center;/*toutes les class text-center sont centrées*/
+}
+.row{
+    display: flex;/*déclare display  flex sur tous les .row*//*active le modèle de boîte flexible (flexbox), qui permet de disposer les éléments enfants d'un conteneur de manière flexible et réactive.*/
+    flex-wrap: wrap;/*permet de faire descendre un élément si tous les éléments représentent plus de 100% de la taille de l'écran*/
+}
+/*on empêche le header de chevaucher les titres*/
+section{
+    padding-top: 20px;
+}
+/*on définit l'espace occupé par chaque colonne*/
+.col-100{
+    width: 100%;/*chaque class col-100 représente 100% de la taille de l'écran*/
+}
+.col-25{
+    width: 25%;/*chaque class col-25 représente 25% de la taille de l'écran*/
+}
+.col-33{
+    width: 33.33%;
+}
+.col-50{
+    width: 50%;
+}
+/*les marges*/
+.mt-100{/*crée une marge de 100 pixels en haut*/
+    margin-top: 100px;
+}
+.mt-50{/*crée une marge en haut de 50 pixels"*/
+    margin-top: 50px;
+}
+/*les couleurs*/
+.color-white{
+    color:white;
+} 
+/*on définit taille et couleur des titres*/
+h1{
+    font-family:"Libre+Bodoni";/*police utilisée*/
+    font-size: 42px;
+}
+h2{
+    font-family:"Libre+Bodoni";/*police utilisée*/
+    font-size: 35px;/*on utilise rem plutôt que px pour le responsive*/
+}
+/*on définit taille et couleur des titres*/
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+/* Style de base pour l'en-tête */
+header {
+    background-color: #0B0D17;
+    color: white;/*couleur de la police dans le header*/
+}
+/* La barre de navigation */
+.navbar {
+    background-color: #0B0D17;
+    border-bottom: 1px #0000;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    min-height: 4.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    position: relative;
+}
+.navbar-container{
+    padding:1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 90rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    z-index: 1000;/*la navbar se place au dessus des autres éléments, les liens sont toujours clicquables*/
+    border-bottom:1px solid;
+    border-color: #D5D53D;
+}
+.logo{
+    height:40px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.brand-name{
+    height:25px;
+    object-fit: cover;
+}
+.group-logo{
+    display: flex;
+    align-items: center;
+}
+/* Style du menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+/* Espacement des liens du menu */
+.menu ul li {
+    margin-left: 100px;
+}
+/* Style des liens */
+.menu ul li a {
+    text-decoration: none;/*retire le surlignage des liens*/
+    color: white;
+    font-weight: bold;
+}
+.group-boutons{
+    gap:20px;
+}
+/*style du bouton*/
+.inscription{
+    width:135px;
+    height:45px;
+    background-color:#D5D53D;
+    border-radius: 25px;
+    color:#0B0D17;/*couleur de la police*/
+    font-weight: bold;
+    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
+    border: none;
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer;/*déclenche l'effet au passage de la souris*/
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+}
+.connexion{
+    width:135px;
+    height:45px;
+    background-color:#0B0D17;
+    border: 2px solid;
+    border-color:#D5D53D ;
+    border-radius: 25px;
+    color:#D5D53D;/*couleur de la police*/
+    font-weight: bold;
+    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer;/*déclenche l'effet au passage de la souris*/
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+
+}
+/*le bouton s'assombrit quand on passe la souris dessus*/
+button:hover{
+    opacity: 0.7;
+}
+/* Style du menu burger (caché par défaut) */
+.burger {
+    display: none;/*cache le menu burger*/
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+.accroche{
+    display: block;
+    width: 600px;
+    height: 272px;
+    gap: 32px;
+}
+.accroche ul{
+    list-style: none;
+}
+.arrow{
+    float:right;
+    margin-top: -200px;
+}
+.flags{
+    margin-top: 310px;
+    overflow: hidden;
+}
+.float-start {
+    float: left !important;
+}
+@keyframes infiniteScroll {
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0px - 50% - 30px));}
+  }
+.horizontal-scrolling-items {
+    display: flex;
+    gap: 60px;
+    animation-name: infiniteScroll;
+    animation-duration: 75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 25px 0!important;
+  }
+.horizontal-scrolling-items__group {
+    display: flex;
+    width: 1440px;
+    gap: 50px; 
+  }
+.horizontal-scrolling-items__group__item {
+    background-size: cover;
+    width: 70px;
+    height: 21px;
+  }
+.item_1 {
+background-image: url("/images/ARS.png");
+} 
+.item_2 {
+background-image: url("/images/AUD.png");
+}
+.item_3 {
+background-image: url("/images/BRL.png");
+}
+.item_4 {
+background-image: url("/images/EGP.png");
+}
+.item_5 {
+background-image: url("/images/EUR.png");
+}
+.item_6 {
+background-image: url("/images/GBP.png");
+} 
+.item_7 {
+background-image: url("/images/GHS.png");
+} 
+.item_8 {
+background-image: url("/images/INR.png");
+}
+.item_9 {
+background-image: url("/images/GHS.png");
+}
+.item_10 {
+background-image: url("/images/INR.png");
+}
+.item_11 {
+background-image: url("/images/JPY.png");
+}
+.item_12 {
+background-image: url("/images/KES.png");
+}
+.item_13 {
+background-image: url("/images/MGA.png");
+}
+.item_14 {
+background-image: url("/images/TRY.png");
+}
+
+  
