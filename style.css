@@ -194,22 +194,38 @@ button:hover{
     margin-top: 310px;
     overflow: hidden;
 }
-.float-start {
+.float-startLeft {
     float: left !important;
 }
-@keyframes infiniteScroll {
+.float-startRight {
+    float: Right !important;
+}
+@keyframes infiniteScrollHi-Lo {
     from {transform: translateX(0) }
     to {transform: translateX(calc(0px - 50% - 30px));}
   }
-.horizontal-scrolling-items {
+@keyframes infiniteScrollMed{
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0px + 50% + 30px));}
+}
+.horizontal-scrolling-itemsHi-Lo {
     display: flex;
     gap: 60px;
-    animation-name: infiniteScroll;
+    animation-name: infiniteScrollHi-Lo;
     animation-duration: 75s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    padding: 25px 0!important;
-  }
+    padding: 10px 0!important;
+}
+.horizontal-scrolling-itemsMed {
+    display: flex;
+    gap: 60px;
+    animation-name: infiniteScrollMed;
+    animation-duration: 75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 10px 0!important;
+}
 .horizontal-scrolling-items__group {
     display: flex;
     width: 1440px;
@@ -221,46 +237,133 @@ button:hover{
     height: 21px;
   }
 .item_1 {
-background-image: url("/images/ARS.png");
+    background-image: url("/images/ARS.png");
 } 
 .item_2 {
-background-image: url("/images/AUD.png");
+    background-image: url("/images/AUD.png");
 }
 .item_3 {
-background-image: url("/images/BRL.png");
+    background-image: url("/images/BRL.png");
 }
 .item_4 {
-background-image: url("/images/EGP.png");
+    background-image: url("/images/EGP.png");
 }
 .item_5 {
-background-image: url("/images/EUR.png");
+    background-image: url("/images/EUR.png");
 }
 .item_6 {
-background-image: url("/images/GBP.png");
+    background-image: url("/images/ZAR.png");
 } 
 .item_7 {
-background-image: url("/images/GHS.png");
+    background-image: url("/images/VND.png");
 } 
 .item_8 {
-background-image: url("/images/INR.png");
+    background-image: url("/images/INR.png");
 }
 .item_9 {
-background-image: url("/images/GHS.png");
+    background-image: url("/images/MUR.png");
 }
 .item_10 {
-background-image: url("/images/INR.png");
+    background-image: url("/images/SEK.png");
 }
 .item_11 {
-background-image: url("/images/JPY.png");
+    background-image: url("/images/JPY.png");
 }
 .item_12 {
-background-image: url("/images/KES.png");
+    background-image: url("/images/KES.png");
 }
 .item_13 {
-background-image: url("/images/MGA.png");
+    background-image: url("/images/TWD.png");
 }
 .item_14 {
-background-image: url("/images/TRY.png");
+    background-image: url("/images/TRY.png");
 }
+.item_15 {
+    background-image: url("/images/USD.png");
+} 
+.item_16 {
+    background-image: url("/images/PLN.png");
+}
+.item_17 {
+    background-image: url("/images/LBP.png");
+}
+.item_18 {
+    background-image: url("/images/NZD.png");
+}
+.item_19 {
+    background-image: url("/images/UYU.png");
+}
+.item_20 {
+    background-image: url("/images/JOD.png");
+} 
+.item_21 {
+    background-image: url("/images/NGN.png");
+} 
+.item_22 {
+    background-image: url("/images/SGD.png");
+}
+.item_23 {
+    background-image: url("/images/KHR.png");
+}
+.item_24 {
+    background-image: url("/images/JMD.png");
+}
+.item_25 {
+    background-image: url("/images/LBP.png");
+}
+.item_26 {
+    background-image: url("/images/MGA.png");
+}
+.item_27 {
+    background-image: url("/images/GHS.png");
+}
+.item_28 {
+    background-image: url("/images/GBP.png");
+}
+.item_29 {
+    background-image: url("/images/CAD.png");
+}
+.item_30 {
+    background-image: url("/images/AOA.png");
+}
+.item_31 {
+    background-image: url("/images/PGK.png");
+}
+.item_32 {
+    background-image: url("/images/RON.png");
+}
+.item_33 {
+    background-image: url("/images/TZS.png");
+}
+.item_34 {
+    background-image: url("/images/ILS.png");
+}
+.item_35 {
+    background-image: url("/images/LKR.png");
+}
+.item_36 {
+    background-image: url("/images/MXN.png");
+}
+.item_37 {
+    background-image: url("/images/MAD.png");
+}
+.item_38 {
+    background-image: url("/images/DKK.png");
+}
+.item_39 {
+    background-image: url("/images/THB.png");
+}
+.item_40 {
+    background-image: url("/images/COP.png");
+}
+.item_41 {
+    background-image: url("/images/BWP.png");
+}
+.item_42 {
+    background-image: url("/images/BGN.png");
+}
+
+
+
 
   
