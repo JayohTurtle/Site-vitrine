@@ -12,9 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="accueil">
         <nav data-animation="default" class="navbar" data-collapse="medium">
             <div class="navbar-container">
                 <div class="group-logo">
@@ -22,7 +23,7 @@
                         <img class="logo" src="images/logo.png" alt="logo Impayrium">
                     </div>
                     <div>
-                        <img class="brand-name" src="images/impayrium.png" alt="Impayrium">
+                        <img class="brand-name" src="images/nameImpayrium.png" alt="Impayrium">
                     </div>
                 </div>
                 <div class="menu" id="menu">
@@ -32,13 +33,12 @@
                         <li><a href="#contact">Contact</a>
                     </ul>
                 </div>
-                
                 <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div class="group-boutons row">
+                <div class="cta row">
                     <div>
                         <button type="submit" class="inscription" id="inscription">Inscription</button>
                     </div>
@@ -49,21 +49,39 @@
             </div>
         </nav>
     </header>
-    <section id ="accueil" class ="container mt-100">
-            <div class="accroche">
-                <h1>La plateforme de transferts internationaux qui s&apos;adapte à vos besoins</h1>
-                <h2>Impayrium met tout en œuvre pour satisfaire les besoins de ses utilisateurs</h2>
-                    <p class="text-center">
-                        Notre plateforme évolue constamment et progresse à vos côtés
-                    </p>
+    <section id ="banner" class="container">
+        <img src="images/arrow.png" alt="double flèche fendue vers la gauche" class="background-arrow">
+        <div >
+            <div class="text-banner text-center mt-100">
+                <h1><a href="#apropos">La plateforme de transferts internationaux qui s&apos;adapte à vos besoins</a></h1>
+                    <p class=" mt-100 taille-text-accueil">Bien plus qu’un simple moyen de transférer de l’argent, Impayrium impact positivement le monde qui l’entoure tout en offrant des transferts internationaux rapides, sécurisés et économiques</p>
             </div>
             <div>
-                <img src="images/arrow.png" alt="fleches vers la gauche" class="arrow">
-            </div>
-    </section>
-    <section>
-        <div class = "container">
-            <div class="flags">
+                <div class="card-carousel">
+                  <div class="card" id="1">
+                    <div class="image-container"></div>
+                    <h3><a href="#cours">Des cours de change compétitifs</a></h3>
+                  </div>
+                  <div class="card" id="2">
+                    <div class="image-container"></div>
+                    <h3><a href="#ong">Vous êtes une ONG ?</a></h3>
+                  </div>
+                  <div class="card" id="3">
+                    <div class="image-container"></div>
+                    <h3><a href="#securite">De la sécurité</a></h3>
+                  </div>  
+                  <div class="card" id="4">
+                    <div class="image-container"></div>
+                    <h3><a href="#frais">Des frais en moins</a></h3>
+                  </div>
+                  <div class="card" id="5">
+                    <div class="image-container"></div>
+                    <h3><a href="#time">Du temps en plus</a></h3>
+                  </div>
+                </div>
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+              </div>
+            <div class="flags mt-100">
                 <div class="horizontal-scrolling-itemsHi-Lo float-startLeft">
                     <div class="horizontal-scrolling-items__group">
                         <div class="horizontal-scrolling-items__group__item item_1"></div>
@@ -169,6 +187,21 @@
             </div>
         </div>
     </section>
+    <section id="ong">
+        <div class="container text-center mt-50">
+            <h2>Vous êtes une ONG ?</h2>
+                <p class="mt-50">De par leurs expériences/activités passées, les dirigeants d’Impayrium connaissent parfaitement le monde des ONG et leurs contraintes liées aux d’opération de change et aux transferts internationaux.
+                <br>Non seulement une ONG qui agit à l’international est une PME avec des problématiques de multinationale mais elle est aussi tributaire des politiques de justification des dépenses des bailleurs institutionnels.
+                <br>La gestion du risque de change devient alors extrêmement complexe et les réponses « classiques » ne peuvent s’appliquer ici.
+                <br>La plateforme Impayrium a aussi été pensée pour vous et s’efforce de répondre à vos besoins spécifiques avec notamment : </p>
+            <ul>
+                <li>Un accompagnement sur les bonnes pratiques à adopter pour mieux appréhender et maitriser votre risque de change</li>
+                <li>La possibilité d’utiliser le taux INFOREURO comme base de référence pour toutes vos transactions</li>
+                <li>Un grand nombre de devises et de pays (notamment pays sensibles)</li>
+            </ul>
+        </div>   
+    </section>
+    
   <!--  <h1>Supprimer les frais et générer du cashback</h1>
     <p>Afin de vous offrir une solution économique, en utilisant Impayrium, vous n'avez :</p>
     <ul>
@@ -198,16 +231,7 @@
         <li>Solidité de nos partenaires financiers</li>
         <li>Plateforme labelisée MyCyberCheck - pentest de CyberSécurité</li>
     </ul>
-    <h1>Vous êtes une ONG ?</h1>
-    <p>De par leurs expériences/activités passées, les dirigeants d’Impayrium connaissent parfaitement le monde des ONG et leurs contraintes liées aux d’opération de change et aux transferts internationaux.
-        <br>Non seulement une ONG qui agit à l’international est une PME avec des problématiques de multinationale mais elle est aussi tributaire des politiques de justification des dépenses des bailleurs institutionnels.
-        <br>La gestion du risque de change devient alors extrêmement complexe et les réponses « classiques » ne peuvent s’appliquer ici.
-        <br>La plateforme Impayrium a aussi été pensée pour vous et s’efforce de répondre à vos besoins spécifiques avec notamment : </p>
-    <ul>
-        <li>Un accompagnement sur les bonnes pratiques à adopter pour mieux appréhender et maitriser votre risque de change</li>
-        <li>La possibilité d’utiliser le taux INFOREURO comme base de référence pour toutes vos transactions</li>
-        <li>Un grand nombre de devises et de pays (notamment pays sensibles)</li>
-    </ul>   
+    
     
 
     <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>-->
