@@ -3,12 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #0B0D17;
 }
 body{
     font-family:"Montserrat", sans-serif;/*police utilisée*/
-    color:white;/*couleur de base du texte*/
-    background-color: #0B0D17
+    color:#0B0D17;/*couleur de base du texte*/
 }
 
 .menu{
@@ -50,17 +48,15 @@ section{
     margin-top: 50px;
 }
 /*les couleurs*/
-.color-white{
-    color:white;
-} 
-/*on définit taille et couleur des titres*/
+.color-gold{
+    color: #D5D53D;
+}
+/*on définit taille des titres*/
 h1{
-    font-family:"Libre+Bodoni";/*police utilisée*/
-    font-size: 42px;
+    font-size: 2.5rem;
 }
 h2{
-    font-family:"Libre+Bodoni";/*police utilisée*/
-    font-size: 35px;/*on utilise rem plutôt que px pour le responsive*/
+    font-size: 2rem;/*on utilise rem plutôt que px pour le responsive*/
 }
 /*on définit taille et couleur des titres*/
 h3{
@@ -69,15 +65,14 @@ h3{
 h4{
     font-size: 1.3rem;
 }
+
 /* Style de base pour l'en-tête */
 header {
-    background-color: #0B0D17;
     color: white;/*couleur de la police dans le header*/
 }
 /* La barre de navigation */
 .navbar {
-    background-color: #0B0D17;
-    border-bottom: 1px #0000;
+    background-color: white;
     align-items: center;
     width: 100vw;
     height: auto;
@@ -98,8 +93,8 @@ header {
     margin-right: auto;
     display: flex;
     z-index: 1000;/*la navbar se place au dessus des autres éléments, les liens sont toujours clicquables*/
-    border-bottom:1px solid;
-    border-color: #D5D53D;
+    border-bottom:3px solid;
+    border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1;
 }
 .logo{
     height:40px;
@@ -126,10 +121,10 @@ header {
 /* Style des liens */
 .menu ul li a {
     text-decoration: none;/*retire le surlignage des liens*/
-    color: white;
+    color:#0B0D17;
     font-weight: bold;
 }
-.group-boutons{
+.cta{
     gap:20px;
 }
 /*style du bouton*/
@@ -177,22 +172,35 @@ button:hover{
     background-color: white;
     margin: 4px;
 }
-.accroche{
-    display: block;
-    width: 600px;
-    height: 272px;
-    gap: 32px;
+
+.background-arrow {
+    object-fit: cover;
+    width: 60%;
+    height:500px;
+    float: right;
+    margin-top: 10em;
 }
-.accroche ul{
-    list-style: none;
+.text-banner{
+    margin-top: 100px;
+    align-items: center;
+    margin-left: 50px;
+    width:500px;
 }
-.arrow{
-    float:right;
-    margin-top: -200px;
+#banner h1 a{
+    text-decoration: none;
+    color:#0B0D17;
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+}
+#banner h1 a:hover{
+    opacity:0.6;
+}
+.taille-text-accueil{
+    font-size: 25px;
 }
 .flags{
-    margin-top: 310px;
     overflow: hidden;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1;
 }
 .float-startLeft {
     float: left !important;
@@ -362,6 +370,112 @@ button:hover{
 .item_42 {
     background-image: url("/images/BGN.png");
 }
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin-left:20em;
+    margin-top: -21em;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: #0B0D17;
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px #D5D53D;
+    -moz-box-shadow: 0px 5px 5px 0px #D5D53D;
+    box-shadow: 0px 5px 5px 0px #D5D53D;
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-carousel h3 a{
+    text-decoration: none;
+    color:#0B0D17;
+    transition: opacity 0.2s ease;
+  }
+  .card-carousel h3 a:hover{
+    opacity: 0.6;
+  }
+  .card.highlight {
+    filter: brightness(1)
+  }
+  .card:nth-of-type(1) .image-container {
+      background-image: url("images/pexels-savvas-stavrinos-270619-814544.jpg");
+  }
+  .card:nth-of-type(2) .image-container {
+    background-image: url("images/pexels-kwaku-griffin-14554004.jpg")
+  }
+  .card:nth-of-type(3) .image-container {
+    background-image: url("images/pexels-theshantanukr-16564254.jpg")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("images/pexels-debraj-6534325.jpg")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("images/pexels-bentonphotocinema-1095602.jpg")
+  }
+  .image-container {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px #D5D53D;
+    -moz-box-shadow: inset 0px 0px 17px 0px #D5D53D;
+    box-shadow: inset 0px 0px 17px 0px #D5D53D;
+    
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px #D5D53D;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+  
 
 
 
