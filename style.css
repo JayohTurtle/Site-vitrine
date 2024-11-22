@@ -28,15 +28,6 @@ section{
     padding-top: 20px;
 }
 /*on définit l'espace occupé par chaque colonne*/
-.col-100{
-    width: 100%;/*chaque class col-100 représente 100% de la taille de l'écran*/
-}
-.col-25{
-    width: 25%;/*chaque class col-25 représente 25% de la taille de l'écran*/
-}
-.col-33{
-    width: 33.33%;
-}
 .col-50{
     width: 50%;
 }
@@ -67,32 +58,32 @@ h4{
 }
 
 /* Style de base pour l'en-tête */
-header {
-    color: white;/*couleur de la police dans le header*/
-}
+
 /* La barre de navigation */
 .navbar {
     background-color: white;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
     min-height: 4.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
-    position: relative;
+    position: fixed;
+    margin-right: auto;
+    margin-left:auto;
+    z-index: 1000;/*la navbar se place au dessus des autres éléments, les liens sont toujours clicquables*/
 }
 .navbar-container{
     padding:1rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1440px;
     max-width: 90rem;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    z-index: 1000;/*la navbar se place au dessus des autres éléments, les liens sont toujours clicquables*/
     border-bottom:3px solid;
     border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1;
 }
@@ -181,7 +172,7 @@ button:hover{
     margin-top: 10em;
 }
 .text-banner{
-    margin-top: 100px;
+    margin-top: 200px;
     align-items: center;
     margin-left: 50px;
     width:500px;
@@ -379,14 +370,14 @@ button:hover{
   }
   .card-carousel {
     --card-width: 80%;
-    --card-max-width: 280px;
+    --card-max-width: 250px;
     --card-height: 350px;
     --carousel-min-width: 600px;
     z-index: 1;
     position: relative;
-    margin-left:20em;
-    margin-top: -21em;
-    width: 100%;
+    margin-left:27em;
+    margin-top: -22em;
+    width: 1200px;
     height: var(--card-height);
     min-width: var(--carousel-min-width);
     transition: filter .3s ease;
