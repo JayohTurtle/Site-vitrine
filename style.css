@@ -31,6 +31,9 @@ section{
 .col-50{
     width: 50%;
 }
+.col-25{
+    width:25%;
+}
 /*les marges*/
 .mt-100{/*crée une marge de 100 pixels en haut*/
     margin-top: 100px;
@@ -427,19 +430,19 @@ button:hover{
     filter: brightness(1)
   }
   .card:nth-of-type(1) .image-container {
-      background-image: url("images/pexels-savvas-stavrinos-270619-814544.jpg");
+    background-image: url("images/pexels-savvas-stavrinos-270619-814544.png");
   }
   .card:nth-of-type(2) .image-container {
-    background-image: url("images/pexels-kwaku-griffin-14554004.jpg")
+    background-image: url("images/pexels-kwaku-griffin-14554004.png")
   }
   .card:nth-of-type(3) .image-container {
-    background-image: url("images/pexels-theshantanukr-16564254.jpg")
+    background-image: url("images/pexels-theshantanukr-16564254.png")
   }
   .card:nth-of-type(4) .image-container {
-    background-image: url("images/pexels-debraj-6534325.jpg")
+    background-image: url("images/pexels-debraj-6534325.png")
   }
   .card:nth-of-type(5) .image-container {
-    background-image: url("images/pexels-bentonphotocinema-1095602.jpg")
+    background-image: url("images/pexels-bentonphotocinema-1095602.png")
   }
   .image-container {
     width: 10em;
@@ -467,8 +470,76 @@ button:hover{
     left: calc(-10% - 3px);
   }
   
+.align-ong{
+    align-items: center;
+}
+.img-ong{
+    border-radius: 3em;
+    box-shadow: white -5px 5px, #D5D53D -10px 10px, #D5D53D -15px 15px;
+}
+.bloc-text-ong{
+    width:600px;
+    height:400px;
+    overflow: scroll;
+    scrollbar-width: thin;
+}
+.container-infos{
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height:30em;
+    width:75em;
+    border-radius: 30px;
+    background-color: #0B0D17;
+    box-shadow: white -5px 5px, hsl(60, 64%, 54%) -10px 10px, #D5D53D -15px 15px;
+   /* border:2px solid;*/
+   /* border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1*/
+}
+.titres-infos{
+    color:white;
+}
+.menu-infos{
+    float:right;
+    margin-top: 2em;
+    width:40em;
+}
+.btn-infos{
+    width:5em;
+    height:2em;
+    background-color:#0B0D17;
+    box-shadow: #D5D53D 0px 1px 0 0;
+    border:none;
+    margin-right: 1em;
+    color:white;/*couleur de la police*/
+    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
+    font-size: 1.5em; /* Taille de la police */
+    cursor: pointer;/*déclenche l'effet au passage de la souris*/
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+}
+.bloc-img-infos{
+    width:500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:1em;
 
-
-
-
-  
+}
+.img-infos-style{
+    height:20em;
+    border-radius: 2em;
+}
+.img-infos-cours {
+    background-image: url("images/pexels-savvas-stavrinos-270619-814544.png");
+}
+.img-infos-securite {
+    background-image: url("images/pexels-theshantanukr-16564254.png")
+}
+.img-infos-tarifs {
+    background-image: url("images/pexels-debraj-6534325.png")
+}
+.img-infos-time {
+    background-image: url("images/pexels-bentonphotocinema-1095602.png")
+}
+.text-infos-style{
+    color: white;
+    float:right;
+}
