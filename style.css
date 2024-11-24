@@ -523,11 +523,11 @@ button:hover{
     height:400px;
     overflow: scroll;
     scrollbar-width: thin;
-    scrollbar-color:#0B0D17 #D5D53D ;
+    scrollbar-color:#D5D53D #0B0D17;
   /* Works on Chrome, Edge, and Safari */
     background-color: rgb(248, 248, 247);
-   /* border: 2px solid;*/
-   /* border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1*/
+    border: 2px solid;
+    text-align: left;
 
 }
 .container-infos{
@@ -549,21 +549,27 @@ button:hover{
     color:white;
 }
 .menu-infos{
-    float:right;
+    float: left;
     margin-top: 2em;
 }
 .btn-infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:5em;
     height:2em;
     background-color:#0B0D17;
-    box-shadow: #D5D53D 0px 1px 0 0;
-    border:none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0px #D5D53D;
+    border: none;
     margin-right: 1em;
     color:white;/*couleur de la police*/
-    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
     font-size: 1.5em; /* Taille de la police */
     cursor: pointer;/*déclenche l'effet au passage de la souris*/
     transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+}
+ul{
+    list-style-position: inside; /* Les points seront à l'intérieur des éléments de liste */
 }
 .bloc-img-infos{
     width:30em;
@@ -594,4 +600,100 @@ button:hover{
 }
 .text-infos-style{
     text-align:left;
+}
+.bckg-contact{
+    background: #D5D53D;
+    width: 100%;
+    height:50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-contact{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0B0D17;
+    height: 35em;
+    width: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 2em;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 20em 20em;/*on crée deux colonnes qui vont occuper chacune la moitié du container*/
+    grid-template-rows:40px 40px 40px;/*on définit la hauteur des lignes*/
+    gap:100px;/*on espace les éléments de la grille*/
+}
+/*on définit la place du label par rapport au champs*/
+.mp-label{
+    display: flex;
+    flex-direction: column;/*on place la label au dessus du champs*/
+    align-items: flex-start;/*on aligne le label et le champs sur la gauche du conteneur*/
+}
+label{
+    font-size: 20px;
+    color: white;
+}
+.obligatoire{
+    color:#D5D53D;
+}
+/*on place les éléments dans la grille*/
+.box-nom{
+    grid-column: 1/2;
+}
+.box-prenom{
+    grid-column: 2/3;
+}
+.box-tel{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.box-mail{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.box-raison{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+input{
+    background-color: transparent;
+    border:none;
+    border-bottom: 3px solid;
+    border-color:#D5D53D;
+    color:white;
+    font-size: 20px;
+    width:100%;
+}
+.btn-contact{
+    width:135px;
+    height:45px;
+    background-color:#0B0D17;
+    border: 2px solid;
+    border-color:#D5D53D;
+    border-radius: 25px;
+    color:#D5D53D;/*couleur de la police*/
+    font-weight: bold;
+    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer;/*déclenche l'effet au passage de la souris*/
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+}
+
+.mp-bouton{
+    margin-top: 8em;
+    display:flex;
+    justify-content:center;
+}
+/*le bouton s'assombrit quand on passe la souris dessus*/
+button:hover{
+    opacity: 0.7;
+}
+
+.bckg-footer{
+    width:100%;
+    height:10em;
+    background: #0B0D17;
 }

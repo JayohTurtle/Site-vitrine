@@ -75,7 +75,7 @@ let boutonTarifs = document.getElementById("btn-tarifs")
             <li>Pas de frais de fermeture de compte</li>
             <li>Aucun engagement</li>
         </ul>
-        <p>Pas de frais mais des revenus : avec Impayrium, vous avez accès à des comptes de collecte rémunérés en EUR, USD et GBP.</p>
+        <p>Pas de frais mais du cashback : avec Impayrium, vous avez accès à des comptes de collecte rémunérés en <strong>EUR</strong>, <strong>USD</strong> et <strong>GBP</strong>.</p>
         `
     textInfosTarifs.innerHTML = textTarifs
 })
