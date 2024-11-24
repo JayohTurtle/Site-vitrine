@@ -28,15 +28,25 @@ section{
     padding-top: 20px;
 }
 /*on définit l'espace occupé par chaque colonne*/
+
+.col-25{
+    width:25%;
+}    
+.col-33{
+    width:33%;
+}
 .col-50{
     width: 50%;
 }
-.col-25{
-    width:25%;
+.col-100{
+    width:100%;
 }
 /*les marges*/
 .mt-100{/*crée une marge de 100 pixels en haut*/
     margin-top: 100px;
+}
+.mt-75{
+    margin-top: 75px;
 }
 .mt-50{/*crée une marge en haut de 50 pixels"*/
     margin-top: 50px;
@@ -130,7 +140,8 @@ h4{
     color:#0B0D17;/*couleur de la police*/
     font-weight: bold;
     padding: 0.5em 1em;/*padding en hauteur et en largeur*/
-    border: none;
+    border: 2px solid;
+    border-color:#0B0D17;
     font-size: 16px; /* Taille de la police */
     cursor: pointer;/*déclenche l'effet au passage de la souris*/
     transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
@@ -140,7 +151,7 @@ h4{
     height:45px;
     background-color:#0B0D17;
     border: 2px solid;
-    border-color:#D5D53D ;
+    border-color:#D5D53D;
     border-radius: 25px;
     color:#D5D53D;/*couleur de la police*/
     font-weight: bold;
@@ -175,10 +186,25 @@ button:hover{
     margin-top: 10em;
 }
 .text-banner{
-    margin-top: 200px;
+    margin-top: 150px;
     align-items: center;
     margin-left: 50px;
     width:500px;
+}
+.demo{
+    width:135px;
+    height:55px;
+    background-color:#D5D53D;
+    border-radius: 25px;
+    color:#0B0D17;/*couleur de la police*/
+    font-weight: bold;
+    padding: 0.5em 1em;/*padding en hauteur et en largeur*/
+    border: 2px solid;
+    border-color:#0B0D17;
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer;/*déclenche l'effet au passage de la souris*/
+    transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
+
 }
 #banner h1 a{
     text-decoration: none;
@@ -379,7 +405,7 @@ button:hover{
     z-index: 1;
     position: relative;
     margin-left:27em;
-    margin-top: -22em;
+    margin-top: -25em;
     width: 1200px;
     height: var(--card-height);
     min-width: var(--carousel-min-width);
@@ -469,9 +495,24 @@ button:hover{
     top: calc(-10% - 3px);
     left: calc(-10% - 3px);
   }
+.img-apropos{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: white -5px 5px, #D5D53D -10px 10px, #D5D53D -15px 15px;
+}
+.mp-apropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
   
-.align-ong{
+.bloc-ong{
     align-items: center;
+    width:100%;
+    justify-content: space-between;
 }
 .img-ong{
     border-radius: 3em;
@@ -482,9 +523,14 @@ button:hover{
     height:400px;
     overflow: scroll;
     scrollbar-width: thin;
+    scrollbar-color:#0B0D17 #D5D53D ;
+  /* Works on Chrome, Edge, and Safari */
+    background-color: rgb(248, 248, 247);
+   /* border: 2px solid;*/
+   /* border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1*/
+
 }
 .container-infos{
-    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     height:30em;
@@ -495,13 +541,16 @@ button:hover{
    /* border:2px solid;*/
    /* border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1*/
 }
+.align-infos{
+    justify-content: space-between;
+    height:30em;
+}
 .titres-infos{
     color:white;
 }
 .menu-infos{
     float:right;
     margin-top: 2em;
-    width:40em;
 }
 .btn-infos{
     width:5em;
@@ -517,12 +566,12 @@ button:hover{
     transition: opacity 0.2s ease;/*on applique un transition pour l'effet visuel qui suit*/
 }
 .bloc-img-infos{
-    width:500px;
+    width:30em;
     margin-top: auto;
     margin-bottom: auto;
     margin-left:1em;
-
 }
+
 .img-infos-style{
     height:20em;
     border-radius: 2em;
@@ -539,7 +588,10 @@ button:hover{
 .img-infos-time {
     background-image: url("images/pexels-bentonphotocinema-1095602.png")
 }
+.text-infos{
+    width:600px;
+    padding:5%;
+}
 .text-infos-style{
-    color: white;
-    float:right;
+    text-align:left;
 }
