@@ -27,12 +27,12 @@ let boutonCours = document.getElementById("btn-cours")
     let textInfosCours = document.querySelector(".text-infos")
     textInfosCours.innerHTML = ""
     let textCours = `
-        <h2>Des cours de change compétitifs</h2> 
+        <h2>Des cours de change attractifs</h2> 
         <p>La vocation d’IMPAYRIUM est de mettre à disposition de ses utilisateurs des cours de change compétitifs pour la réalisation de leurs transferts internationaux.
             <br>Les deux points fondamentaux sur lesquels IMPAYRIUM s’appuie pour atteindre cet objectif sont :</p>
         <ul>
             <li>Une politique de marges fixes et minimes</li>
-            <li>La recherche permanente de nouveaux partenaires financiers</li>
+            <li>La recherche permanente de nouveaux partenaires financiers solides et compétitifs</li>
         </ul>
         `
     textInfosCours.innerHTML = textCours
