@@ -535,19 +535,28 @@ p{
     left: calc(-10% - 3px);
   }
 .img-apropos{
-    width:400px;
+    width:100%;
     height:400px;
     object-fit: cover;
-    border-radius: 50%;
-    box-shadow: white -5px 5px, #D5D53D -10px 10px, #D5D53D -15px 15px;
+  /*  border-radius: 25%;*/
+ /*   box-shadow: white -5px 5px, #D5D53D -10px 10px, #D5D53D -15px 15px;*/
+    opacity:0.2;
 }
+.line1{
+    justify-content: space-between;
+    margin-top: -24rem;
+}
+.line2{
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mp-apropos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width:100%;
     font-size: 1.5em;
     font-weight: bold;
-   /* color:white;*/
+    z-index: 30;
 }
   
 .bloc-ong{
@@ -563,7 +572,7 @@ p{
     width: 600px;
     height: 400px;
     overflow-y: scroll;
-    scrollbar-color: #D5D53D #0B0D17;
+    scrollbar-color: #D5D53D #226D68;
   /*  scrollbar-width: thin;*/
     background-color: whitesmoke;
     text-align: left;
@@ -575,7 +584,7 @@ p{
     height:30em;
     width:75em;
     border-radius: 30px;
-    background-color:#0B0D17;
+    background-color:#226D68;
     box-shadow: white -5px 5px, hsl(60, 64%, 54%) -10px 10px, #D5D53D -15px 15px;
    /* border:2px solid;*/
    /* border-image: linear-gradient(to right, #D5D53D 33%,#0B0D17) 1*/
@@ -597,7 +606,7 @@ p{
     align-items: center;
     width:5em;
     height:2em;
-    background-color:#0B0D17;
+    background-color:#226D68;
     border-radius: 15px;
     box-shadow: 1px 1px 0px #D5D53D;
     border: none;
@@ -635,8 +644,9 @@ ul{
     background-size: cover; /* ou cover selon vos besoins */
     background-position: center;
     background-repeat: no-repeat;
-    width: 25em; /* ou la largeur souhaitée */
-    height: 20em; /* ou la hauteur souhaitée */
+    width: 25rem; /* ou la largeur souhaitée */
+    height: 23rem; /* ou la hauteur souhaitée */
+    margin-left: 3rem;
 }
 .img-infos-cours {
     background-image: url("images/pexels-savvas-stavrinos-270619-814544.png");
@@ -668,7 +678,7 @@ ul{
 .container-contact{
     margin-left: auto;
     margin-right: auto;
-    background-color: #0B0D17;
+    background-color: #226D68;
     height: 35em;
     width: 50em;
     display: flex;
@@ -726,7 +736,7 @@ input{
 .btn-contact{
     width:135px;
     height:45px;
-    background-color:#0B0D17;
+    background-color:#226D68;
     border: 2px solid;
     border-color:#D5D53D;
     border-radius: 25px;
