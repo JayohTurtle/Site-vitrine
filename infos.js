@@ -1,6 +1,41 @@
+//const boutons = document.querySelectorAll('.btn');
+/*const idsNonCliques = [];
 
+boutons.forEach(bouton => {
+    bouton.addEventListener('click', () => {
+        bouton.dataset.clique = 'true';
+    });
+});
+
+function recupererIdsNonCliques() {
+    boutons.forEach(bouton => {
+        if (!bouton.dataset.clique) {
+            idsNonCliques.push(bouton.id);
+        }
+    });
+    return idsNonCliques;
+}
+
+// Exemple d'utilisation
+document.getElementById('verifierBoutons').addEventListener('click', () => {
+    const ids = recupererIdsNonCliques();
+    console.log('IDs des boutons non cliqués:', ids);
+});*/
+
+/**
+ * On écoute les évènements sur les boutons infos
+ * Quand un bouton est cliqué, on change le texte et la photo dans le cadre
+ * On ajoute la classe brightness-btn aux autres boutons pour changer leur couleur et réduire leur taille
+ */
 let boutonTime = document.getElementById("btn-time")
     boutonTime.addEventListener("click", () =>{
+    boutonTime.classList.remove("brightness-btn")
+    let boutons = document.querySelectorAll('.btn-infos')
+    boutons.forEach(bouton => {
+        if (bouton.id !== "btn-time"){
+            bouton.classList.add("brightness-btn")
+        }
+    })
     let imgInfosTime = document.getElementById("img-infos")
     document.getElementById("img-infos").className=""
     imgInfosTime.classList.add("img-infos-time","img-infos-style")
@@ -21,6 +56,13 @@ let boutonTime = document.getElementById("btn-time")
 })
 let boutonCours = document.getElementById("btn-cours")
     boutonCours.addEventListener("click", () =>{
+    boutonCours.classList.remove("brightness-btn")
+    let boutons = document.querySelectorAll('.btn-infos')
+    boutons.forEach(bouton => {
+        if (bouton.id !== "btn-cours"){
+            bouton.classList.add("brightness-btn")
+        }
+    })
     let imgInfosCours = document.getElementById("img-infos")
     document.getElementById("img-infos").className=""
     imgInfosCours.classList.add("img-infos-cours","img-infos-style")
@@ -39,6 +81,13 @@ let boutonCours = document.getElementById("btn-cours")
 })
 let boutonSecurite = document.getElementById("btn-securite")
     boutonSecurite.addEventListener("click", () =>{
+    boutonSecurite.classList.remove("brightness-btn")
+    let boutons = document.querySelectorAll('.btn-infos')
+    boutons.forEach(bouton => {
+    if (bouton.id !== "btn-securite"){
+        bouton.classList.add("brightness-btn")
+    }
+    })
     let imgInfosSecurite = document.getElementById("img-infos")
     document.getElementById("img-infos").className=""
     imgInfosSecurite.classList.add("img-infos-securite","img-infos-style")
@@ -59,6 +108,13 @@ let boutonSecurite = document.getElementById("btn-securite")
 })
 let boutonTarifs = document.getElementById("btn-tarifs")
     boutonTarifs.addEventListener("click", () =>{
+    boutonTarifs.classList.remove("brightness-btn")
+    let boutons = document.querySelectorAll('.btn-infos')
+    boutons.forEach(bouton => {
+        if (bouton.id !== "btn-tarifs"){
+            bouton.classList.add("brightness-btn")
+        }
+    })
     let imgInfosTarifs = document.getElementById("img-infos")
     document.getElementById("img-infos").className=""
     imgInfosTarifs.classList.add("img-infos-tarifs","img-infos-style")

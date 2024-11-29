@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="infos.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header id="accueil">
@@ -62,23 +63,23 @@
                 <div class="card-carousel">
                   <div class="card" id="1">
                     <div class="image-container"></div>
-                    <h3 class="cours"><a href="infos.html">Des cours de change compétitifs</a></h3>
+                    <h3><a href="infos.html" id="lien-cours" class="btn">Des cours de change compétitifs</a></h3>
                   </div>
                   <div class="card" id="2">
                     <div class="image-container"></div>
-                    <h3><a href="infos.html">Vous êtes une ONG ?</a></h3>
+                    <h3><a href="infos.html" id="lien-ong" class="btn">Vous êtes une ONG ?</a></h3>
                   </div>
                   <div class="card" id="3">
                     <div class="image-container"></div>
-                    <h3 class="securite"><a href="infos.html">De la sécurité</a></h3>
+                    <h3><a href="infos.html" id="lien-securite" class="btn">De la sécurité</a></h3>
                   </div>  
                   <div class="card" id="4">
                     <div class="image-container"></div>
-                    <h3 class="frais"><a href="infos.html">Des frais en moins</a></h3>
+                    <h3><a href="infos.html" id="lien-tarifs" class="btn">Des frais en moins</a></h3>
                   </div>
                   <div class="card" id="5">
                     <div class="image-container"></div>
-                    <h3 class="time"><a href="infos.html">Du temps en plus</a></h3>
+                    <h3 id="lien-time" class="btn">Du temps en plus</h3>
                   </div>
                 </div>
                 <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
@@ -216,27 +217,32 @@
                 <h4>Nous vous rappelons dans les 48 heures</h4>
             </div>
                 <div class="container-contact mt-50">
-                <form method="get" action="#">
-                    <div class="form-grid mt-50">
-                        <div class="box-nom mp-label">
+                <form id = form>
+                    <div class="form-grid mt-50 ">
+                        <div class="box-nom mp-label form-control">
                             <label>Nom<span class="obligatoire">*</span></label>
                             <input type="text" name="nom" id="nom" required>
+                            <small>Message d'erreur</small>
                         </div>
-                        <div class="box-prenom mp-label" >
+                        <div class="box-prenom mp-label form-control">
                             <label>Prénom<span class="obligatoire">*</span></label>
                             <input type="text" name="prenom" id="prenom" required>
+                            <small>Message d'erreur</small>
                         </div>
-                        <div class="box-tel mp-label">
+                        <div class="box-tel mp-label form-control">
                             <label>Téléphone professionnel<span class="obligatoire">*</span></label>
                             <input type="tel" name="telephone" id="telephone" required>
+                            <small>Message d'erreur</small>
                         </div>
-                        <div class="box-mail mp-label">
+                        <div class="box-mail mp-label form-control">
                             <label>Email<span class="obligatoire">*</span></label>
                             <input type="email"  id="email" required>
+                            <small>Message d'erreur</small>
                         </div>
-                        <div class="box-raison mp-label">
+                        <div class="box-raison mp-label form-control">
                             <label for="raison">Raison sociale<span class="obligatoire">*</span></label>
                             <input type="text" name="raison" id="raison" required>
+                            <small>Message d'erreur</small>
                         </div>
                     </div>
                     <div class="mp-bouton">
@@ -260,7 +266,7 @@
                 <div class="mentions row">
                     <ul>
                         <li><a href="images/Mentions-legales.pdf" target="_blank">Mentions légales</a></li>
-                        <li><a href="images/Politique-de-confidentialité.pdf" target="_blank">Politique de confidentialité</a></li>
+                        <li><a href="images/Politique-de-confidentialite.pdf" target="_blank">Politique de confidentialité</a></li>
                         <li><a href="images/CGU-Impayrium.pdf" target="_blank">Conditions générales d'utilisation</a></li>
                     </ul>
                 </div>
