@@ -1,12 +1,25 @@
+
+
+function handleLinkClick(event) { 
+    let linkId = event.target.id.slice(5)
+    localStorage.setItem("clickAction", linkId); 
+    window.location.href = "infos.html"; 
+}
+
+
 //on récupère l'emplacement du formulaire
-let form = document.getElementById('form')
+const form = document.getElementById('form')
 //on récupére les champs email et téléphone du formulaire
-let telephone = document.getElementById('telephone')
-let email = document.getElementById('email')
+const telephone = document.getElementById('telephone')
+const email = document.getElementById('email')
+const nom = document.getElementById('nom')
+const prenom = document.getElementById('prenom')
+const raison = document.getElementById('raison')
+
 
 //on crée les évènements
 //on vérifie la validité des champs à la fin quand on clique sur le submit
-let bouton = document.querySelector('.btn-contact')
+const bouton = document.querySelector('.btn-contact')
 bouton.addEventListener('click', (event)=>{
     event.preventDefault()
     //on appelle la fonction vérifier champs
@@ -20,7 +33,7 @@ bouton.addEventListener('click', (event)=>{
 function verifierChamps(){
     //on vérifie que les input ne sont pas vides
     //on sélectionne tous les input
-    let input = document.querySelectorAll('input')
+    const input = document.querySelectorAll('input')
     for(let i = 0; i < input.length; i++){
         let inputId = input[i].id//on récupère les id
         let inputElement = document.getElementById(inputId)//on se place dans le DOM
