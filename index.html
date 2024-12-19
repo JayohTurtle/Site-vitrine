@@ -13,81 +13,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="infos.js" defer></script>
     <script src="index.js" defer></script>
 </head>
 <body>
     <header id="accueil">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="group-logo">
-                    <div>
-                        <img class="logo" src="images/logo.png" alt="logo Impayrium">
+        <div class="header-image container">
+            <nav class="container">
+                <div class="navbar-container">
+                    <div class="group-logo">
+                        <img class="logo" src="images/Vector.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-1.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-2.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-3.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-4.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-5.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-7.svg" alt="logo Impayrium">
+                        <img class="logo" src="images/Vector-8.svg" alt="logo Impayrium">
+                        <ul>
+                            <li><a href="#produit" class="btn cta">Notre produit</a></li>
+                            <li><a href="#engagements" class="btn cta">Nos engagements</a></li>
+                            <li><a href="charte.html" class="btn cta">Notre charte</a></li>
+                            <li><a href="#contact" class="btn cta">Contact</a></li>
+                        </ul>
                     </div>
                     <div>
-                        <img class="brand-name" src="images/nameImpayrium.png" alt="Impayrium">
+                        <button type="submit" class="btn-connexion" id="connexion">Connexion</button>
                     </div>
                 </div>
-                <div class="menu" id="menu">
-                    <ul> <!--liste des liens du menu-->
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="charte.html">Notre charte</a>
-                        <li><a href="#contact">Contact</a>
-                    </ul>
-                </div>
-                <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="cta row">
-                    <div>
-                        <a href="#contact" class="btn" id="inscription">Inscription</a>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn" id="connexion">Connexion</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <section id ="banner" class="container">
-        <img src="images/arrow.png" alt="double flèche fendue vers la gauche" class="background-arrow">
-        <div >
-            <div class="text-banner text-center mt-100">
-                <h1><a href="#apropos">La plateforme de transferts internationaux qui s&apos;adapte à vos besoins</a></h1>
-                <a href="#contact" class="btn mt-50" id="demo">Demandez votre démo</a>
-                <p class="mt-50 taille-text-accueil">Bien plus qu’un simple moyen de transférer de l’argent, Impayrium impact positivement le monde qui l’entoure tout en offrant des transferts internationaux rapides, sécurisés et économiques</p>
-            </div>
-            <div>
-                <div class="card-carousel">
-                  <div class="card" id="1">
-                    <div class="image-container"></div>
-                    <h3><a href="infos.html" id="lien-cours" class="btn">Des cours de change compétitifs</a></h3>
-                  </div>
-                  <div class="card" id="2">
-                    <div class="image-container"></div>
-                    <h3><a href="infos.html#ong" id="lien-ong" class="btn">Vous êtes une ONG ?</a></h3>
-                  </div>
-                  <div class="card" id="3">
-                    <div class="image-container"></div>
-                    <h3><a href="infos.html" id="lien-securite" class="btn">De la sécurité</a></h3>
-                  </div>  
-                  <div class="card" id="4">
-                    <div class="image-container"></div>
-                    <h3><a href="infos.html" id="lien-tarifs" class="btn">Des frais en moins</a></h3>
-                  </div>
-                  <div class="card" id="5">
-                    <div class="image-container"></div>
-                    <h3 id="lien-time" class="btn">Du temps en plus</h3>
-                  </div>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-title">
+                    <h1>  La plateforme de transferts internationaux qui s'adapte à vos besoins</h1>
+                    <p class="mt-25">Bien plus qu’un simple moyen de transférer de l’argent, Impayrium impact positivement le monde qui l’entoure tout en offrant des transferts internationaux rapides, sécurisés et économiques</p>
+                    <button type="submit" class="btn-demo mt-25" id="demo">Demandez votre démo</button>
+                    <p class="transfer-title">Réalisez vos transferts de fonds dans plus de <span class="color-blue">130 devises</span></p>
                 </div>
-                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+                <div class="banner-img">
+                    <img src="images/screen-shot.png" alt="Screenshot plateforme Impayrium">
+                </div>
             </div>
-            <div>
-                <h3 class="mt-100 text-center">Transférez vos fonds dans plus de 130 devises</h3>
-            </div>
-            <div class="flags">
+            <div class="flags container">
                 <div class="horizontal-scrolling-itemsHi-Lo float-startLeft">
                     <div class="horizontal-scrolling-items__group">
                         <div class="horizontal-scrolling-items__group__item item_1"></div>
@@ -156,6 +126,13 @@
                         <div class="horizontal-scrolling-items__group__item item_28"></div>      
                     </div>
                 </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="engagements">
+        <div class="background-engagements container">
+            <div class="flags-Lo container">
                 <div class="horizontal-scrolling-itemsHi-Lo float-startLeft">
                     <div class="horizontal-scrolling-items__group">
                         <div class="horizontal-scrolling-items__group__item item_29"></div>
@@ -191,56 +168,117 @@
                     </div>
                 </div>
             </div>
+            <p class="text-center color-blue mt-100">NOS ENGAGEMENTS</p>
+            <h1 class="text-center mt-25">Simplifiez <span class="color-blue">-</span> Economisez <span class="color-blue">-</span> Sécurisez</h1>
         </div>
-    </section>
-    <section id="apropos">
-        <div class="container text-center mt-100">
-            <div class="bckg-titres">
-                <h2>Impayrium s'intègre à votre écosystème et évolue avec vous</h2>
-            </div>
-            <div><img src="images/gears-1381719_1280.png"photo d'engrenages bleus" class="mt-50 img-apropos"></div>
-            <div class="mp-apropos">
-                <div class="row line1">
-                    <div class="col-50">Connectez Impayrium à votre ERP</div>
-                    <div class="col-50">Visionnez vos comptes bancaires en direct sur Impayrium</div>
+        <div class="row container mt-75 container-gif-text">
+            <div class="col-50 text-center">
+                <img src="images/gif-moneybag.gif" alt="image animée d'un sac de pièces">
+                <div class="mt-50 text-engagements">
+                    <h1>Des cours de change attractifs</h1>
+                    <p class="mt-25">Grâce à:</p>
+                    <ul class="inside-list">
+                        <li>Des marges fixes et minimes sur vos opérations</li>
+                        <li>La recherche constante de nouveaux partenaires solides et compétitifs</li>
+                    </ul>
+                    <p>Optimisez vos coûts de transfert avec Impayrium.</p>
                 </div>
-                <div class="mt-50">Vous avez besoin d'une nouvelle fonctionnalité?</div>
-                <div class="line2 text-center mt-50">Impayrium met tout en œuvre pour améliorer constamment la qualité de ses services et répondre aux besoins de ses utilisateurs</div>
-                <div class="mt-50">Notre plateforme évolue constamment et progresse à vos côtés</div>
+                <img src="images/gif-shield.gif" alt="Un bouclier avec un cadenas animé" class="mt-50">
+            </div>
+            <div class="col-50 text-center">
+                <div class="text-engagements">
+                    <h1>Supprimez les frais, générez du cashback</h1>
+                    <p class="mt-25">Vous bénéficiez d'une solution sans frais cachés:</p>
+                    <ul class="inside-list">
+                        <li>Pas de frais d'ouverture ou de fermeture de compte</li>
+                        <li>Pas de commission de mouvement</li>
+                        <li>Pas de frais de transfert</li>
+                        <li>Aucun engagement</li>
+                    </ul>
+                    <p>Et vous profitez de comptes de collecte rémunérés en EUR, USD et GBP.</p>
+                </div>
+                <img src="images/gif-dollar.gif" alt="Le symbole dollar avec une animation recyclable" class="mt-50">   
+                <div class="text-engagements mt-50">
+                    <h1>Opérez en toute confiance</h1>
+                    <p class="mt-25">La sécurité et la fiabilité sont au cœur du projet IMPAYRIUM:</p>
+                    <ul>
+                        <li>Système de contrôle simple ou double des opérations selon votre politique interne</li>
+                        <li>Profils d’utilisateurs modulables</li>
+                        <li>Système d’accès à la plateforme sécurisé</li>
+                        <li>Plateforme labelisée MyCyberCheck</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="bckg-contact mt-100">
-            <div class="text-center">
-                <h2 class="mt-50">Vous souhaitez en savoir plus ?</h2>
-                <h4>Nous vous rappelons dans les 48 heures</h4>
+    <section id="ONG">
+        <div class="container">
+            <p class="text-center color-blue mt-100">OPTIMISEZ VOS TRANSFERTS INTERNATIONAUX</p>
+            <div class="text-center container-title-ONG">
+                <h1 class="mt-25">Une plateforme également pensée pour les ONG internationales</h1>
+                <p class="mt-25">
+                    C'est parce que nous avons pleinement conscience qu'une ONG qui agit à l’international est une PME avec des problématiques de multinationale que nous nous sommes attachés à vous proposer des fonctionnalités spécifiques qui répondent à vos besoins.
+                </p>
             </div>
-                <div class="container-contact mt-50">
+            <div class="row mt-100 bloc-ONG">
+                <div class="img-ONG">
+                    <img src="images/burau-Ong.png" alt="Image d'une personne assise à un bureau devant un ordinateur avec un casque audio">
+                </div>
+                <div class="text-ONG">
+                    <h1 class="mt-25">La justification des dépenses</h1>
+                    <p class="mt-25">Les politiques de justification des dépenses des bailleurs empêchent l'utilisation des réponses classiques au risque de change.
+                        <br>Les subventions reçues dans une devise étrangère ne peuvent être couvertes puisque le taux de référence utilisé pour justifier les dépenses n'est pas connu à l'avance.
+                        <br>La gestion de ce risque est complexe et les Les opérateurs d'Impayrium sont formés pour s'assurer de ne jamais vous proposer d'effectuer des opérations qui seraient, au mieux, inutiles et, au pire, dangereuses.
+                        <br>Ils sont également aptes à vous accompagner sur les bonnes pratiques à adopter pour mieux appréhender et maitriser votre risque de change.</p>
+                    <h1 class="mt-25">Des fonctionnalités bénéfiques</h1>
+                    <p class="mt-25">
+                        Une ONG qui opère à l'international doit aussi jongler avec une masse de transferts importante et régulière.
+                        <br>Une activité particlièrement chronophage surtout lorsque l'on travaille avec des effectifs restreints.
+                        <br>Impayrium intègre des fonctionnalités de mass-payment et multi-payment permettant de réduire le temps passé à saisir les transferts.
+                        <br>Vous pouvez également créer des listes réutilisables et modifiables pour gagner en rapidité et simplicité.
+                        <br>Enfin, notre plateforme vous permet de comparer automatiquement le cours proposé avec le taux INFOEURO.
+                    </p>
+                    <h1 class="mt-25">Des pays et des devises sensibles</h1>
+                    <p class="mt-25">
+                        Afin d'envoyer des fonds dans le plus de pays possible et dans une gamme de devises importante, Impayrium s'appuie sur des partenaires solides et efficaces.
+                        <br>Dès maintenant, Impayrium vous offre la possibilité de réaliser vos transferts dans plus de 130 devises et poursuit activement la recherche des meilleurs partenaires pour chaque destination afin de vous offrir un service de qualité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="mt-100">
+        <div class="container">
+            <div class="background-contact">
+                <h1 class="text-center">Vous souhaitez en savoir plus?</h1>
+                <p class="text-center">Nous vous rappelons dans les 48 heures</p>
+            </div>
+            <div class="img-background-inversee"></div>
+            <div class="container-contact mt-50">
                 <form id = form>
                     <div class="form-grid mt-50 ">
                         <div class="box-nom mp-label form-control">
-                            <label>Nom<span class="obligatoire">*</span></label>
+                            <label>Nom</label>
                             <input type="text" name="nom" id="nom" required>
                             <small>Message d'erreur</small>
                         </div>
                         <div class="box-prenom mp-label form-control">
-                            <label>Prénom<span class="obligatoire">*</span></label>
+                            <label>Prénom</label>
                             <input type="text" name="prenom" id="prenom" required>
                             <small>Message d'erreur</small>
                         </div>
                         <div class="box-tel mp-label form-control">
-                            <label>Téléphone professionnel<span class="obligatoire">*</span></label>
+                            <label>Téléphone professionnel</label>
                             <input type="tel" name="telephone" id="telephone" required>
                             <small>Message d'erreur</small>
                         </div>
                         <div class="box-mail mp-label form-control">
-                            <label>Email<span class="obligatoire">*</span></label>
+                            <label>Email</label>
                             <input type="email"  id="email" required>
                             <small>Message d'erreur</small>
                         </div>
                         <div class="box-raison mp-label form-control">
-                            <label for="raison">Raison sociale<span class="obligatoire">*</span></label>
+                            <label for="raison">Raison sociale</label>
                             <input type="text" name="raison" id="raison" required>
                             <small>Message d'erreur</small>
                         </div>
@@ -250,35 +288,50 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div>     
     </section>
     <footer>
-        <div class="text-center row bckg-footer color-text">
-            <div class="footer row container">
-                <div class="group-logo">
-                    <div>
-                        <img class="logo" src="images/logo.png" alt="logo Impayrium">
+        <div class="container mt-100 container-footer">
+            <div class="row">
+                <div class="left-footer">
+                    <div class="group-logo-footer">
+                        <img class="logo-footer" src="images/Vector.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
+                        <ul>
+                            <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
+                            <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
+                            <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
+                        </ul>
                     </div>
-                    <div>
-                        <img class="brand-name" src="images/impayrium.png" alt="Impayrium">
+                    <div class="disclaimer mt-25">
+                        <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
+                    </div>
+                    <div class="copyright">
+                        Copyright 2023 IMPAYRIUM SA
                     </div>
                 </div>
-                <div class="mentions row">
-                    <ul>
-                        <li><a href="images/Mentions-legales.pdf" target="_blank">Mentions légales</a></li>
-                        <li><a href="images/Politique-de-confidentialite.pdf" target="_blank">Politique de confidentialité</a></li>
-                        <li><a href="images/CGU-Impayrium.pdf" target="_blank">Conditions générales d'utilisation</a></li>
-                    </ul>
+                <div class="infos-impayrium">
+                    <p class="title-contact">Contact</p>
+                    <div class="mt-25">
+                        <div class="align-icon">
+                            <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
+                            <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+                        </div>
+                        <div class="align-icon marge-icon mt-25">
+                            <img src="images/localisation.png" alt="Icône de localisation" class="icon">
+                            <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="disclaimer row">
-                IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.
-            </div>
-            <div class="copyright container">
-                Copyright 2023 IMPAYRIUM SA
             </div>
         </div>
-            
     </footer>
 </body>
 
