@@ -131,6 +131,7 @@ h4{
     font-weight: 600;
     cursor: pointer;
     transition: opacity 0.2s ease;
+    
 }
 .btn-connexion:hover{
     opacity: 0.7;

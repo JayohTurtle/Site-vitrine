@@ -1,10 +1,11 @@
-
-
-function handleLinkClick(event) { 
-    let linkId = event.target.id.slice(5)
-    localStorage.setItem("clickAction", linkId); 
-    window.location.href = "infos.html"; 
-}
+const btnConnexion = document.getElementById('connexion')
+btnConnexion.addEventListener('click', () => { 
+    window.location.href = 'https://platform.impayrium.com/login'
+})
+const btnDemo = document.getElementById('demo')
+    btnDemo.addEventListener('click', () => { 
+    window.location.href = '#contact'
+})
 
 
 //on récupère l'emplacement du formulaire
