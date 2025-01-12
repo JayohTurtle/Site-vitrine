@@ -19,22 +19,30 @@
         <div class="background-valeurs container">
             <nav class="container">
                 <div class="navbar-container">
-                    <div class="group-logo">
-                        <img class="logo" src="images/Vector.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-1.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-2.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-3.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-4.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-5.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-6.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-7.svg" alt="logo Impayrium">
-                        <img class="logo" src="images/Vector-8.svg" alt="logo Impayrium">
-                        <ul>
-                            <li><a href="index.html#produit" class="btn cta">Notre produit</a></li>
-                            <li><a href="index.html#engagements" class="btn cta">Nos engagements</a></li>
-                            <li><a href="charte.html" class="btn cta">Notre charte</a></li>
-                            <li><a href="#contact" class="btn cta">Contact</a></li>
-                        </ul>
+                    <div class="logo-liens">
+                        <div>
+                            <img class="logo" src="images/Vector.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-1.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-2.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-3.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-4.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-5.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-6.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-7.svg" alt="logo Impayrium">
+                            <img class="logo" src="images/Vector-8.svg" alt="logo Impayrium">
+                        </div>
+                        <div class="menu" id="menu">
+                            <ul>
+                                <li><a href="index.html" class="btn cta-charte">Accueil</a></li>
+                                <li><a href="charte.html" class="btn cta-charte">Nos engagements</a></li>
+                                <li><a href="#contact" class="btn cta-charte">Contact</a></li>
+                            </ul>
+                        </div> 
+                        <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>   
                     </div>
                     <div>
                         <button type="button" class="btn-connexion" id="connexion">Connexion</button>
@@ -46,8 +54,8 @@
     <section id="valeurs">
         <div class="container">
             <img src="images/nuage-valeurs.svg" alt="nuages bleutés" class="nuage-title">
-            <div class="text-center">
-                <p class="color-blue valeurs-title">NOS VALEURS</p>
+            <div class="text-center valeurs-title">
+                <p class="color-blue mt-100 text-center">NOS VALEURS</p>
                 <div class="valeurs-text mt-25">
                     <h1 >Un engagement responsable pour un avenir durable</h1>
                     <p class="mt-25"> Pleinement conscients des défis environnementaux auxquels nous faisons face, Impayrium croit fermement en sa responsabilité de contribuer à des solutions durables pour un avenir meilleur. 
@@ -59,79 +67,44 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="politique-RSE">
-        <p class="color-blue mt-200 text-center">NOS ENGAGEMENTS</p>
-        <div class="valeurs-text mt-25 text-center">
-            <h1>Une politique RSE pilotée par une gouvernance responsable et transparente</h1>
-        </div>
-        <div class="row container mt-100 container-engagements">
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Une plate-forme "Made in France"</h2>
-                    <p>Impayrium concrétise son objectif d’ancrage sur le territoire en faisant appel à des acteurs locaux pour le développement:</p>
-                    <ul>    
-                        <li>Développeurs français</li> 
-                        <li>Hébergeur web français : OVH</li>
-                    </ul> 
-                    <p>Implanté sur le territoire, Impayrium est soumis au régime d’imposition français et le restera.</p>
-                </div>
+        <div class="objectif-title">
+            <p class="color-blue mt-100 text-center">NOS OBJECTIFS</p>
+            <div class="valeurs-text mt-25 text-center">
+                <h1>Une politique RSE pilotée par une gouvernance responsable et transparente</h1>
             </div>
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Un acteur de confiance</h2>
-                    <p>Gestion du risque intégrée dans nos pratiques</p>
-                    <ul>
-                        <li>Plateforme labelisée MyCyberCheck - pentest de CyberSécurité</li>
-                        <li>Respect du Règlement Général de Protection des Données</li>
-                        <p>Enregistré en tant qu'agent de paiement auprès de la Banque Nationale Belge sous le numéro : EBURFRA000104</p>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Un employeur engagé</h2>
-                    <p>Créer un espace de travail stimulant, respectueux permettant de réaliser le potentiel de chacun</p>
-                    <ul>
-                        <li>Respecter les obligations liées à la santé et la sécurité des employés</li>
-                        <li>l’égalité salariale homme/femme</li>
-                        <li>Veiller à la diversité et l’égalité des chances</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section id="objectifs">
-        <p class="color-blue mt-100 text-center">NOS OBJECTIFS</p>
-        <div class="valeurs-text mt-25 text-center">
-            <h1>Une charte qui s'inscrit dans une démarche d'amélioration continue</h1>
-        </div>
-        <div class="row container mt-100 container-engagements">
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Agir pour préserver l’environnement</h2>
-                    <p>Impayrium concrétise son objectif d’ancrage sur le territoire en faisant appel à des acteurs locaux pour le développement:</p>
-                    <ul>    
-                        <li>S’engager dans la sobriété énergétique et numérique</li> 
-                        <li>Lutter contre la pollution des océans et la déforestation</li>
-                    </ul> 
-                </div>
-            </div>
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Investir pour l’éducation</h2>
-                    <ul>
-                        <li>Soutenir les organisations qui promeuvent l'accès à l'éducation pour tous</li>
-                        <li>Concevoir des partenariats avec des écoles supérieures pour créer des changements durables et encourager les comportements resonsables et la prise de décision éclairée</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-33">
-                <div class="container-flag row">
-                    <h2 class="french-title mt-25">Favoriser la cohésion entrepreneuriale</h2>
-                    <ul>
-                        <li>Favoriser les synergies et l’échange de bonnes pratiques en rejoignant les acteurs engagés du territoire partageant nos valeurs</li>
-                        <li>Adopter une politique de sélection de nos prestataires et de nos achats favorisant la proximité et les circuits courts</li>
-                    </ul>
+            <div class="container mt-100 ">
+                <div class="row container-engagements">
+                    <div class="col-33 container-flag">
+                        <img src="images/environnement.png" alt="un champs avec une fleur sur fond bleu" class="img-rse">
+                        <div class="text-flags">
+                            <h2 class="french-title mt-25">Agir pour préserver l’environnement</h2>
+                            <p>Impayrium concrétise son objectif d’ancrage sur le territoire en faisant appel à des acteurs locaux pour le développement:</p>
+                            <ul>    
+                                <li>S’engager dans la sobriété énergétique et numérique</li> 
+                                <li>Lutter contre la pollution des océans et la déforestation</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-33 container-flag">
+                        <img src="images/education.png" alt="une salle de classe sur fond bleu" class="img-rse">
+                        <div class="text-flags">
+                            <h2 class="french-title mt-25">Investir pour l’éducation</h2>
+                            <ul>
+                                <li>Soutenir les organisations qui promeuvent l'accès à l'éducation pour tous</li>
+                                <li>Concevoir des partenariats avec des écoles supérieures pour créer des changements durables et encourager les comportements resonsables et la prise de décision éclairée</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-33 container-flag">
+                        <img src="images/cohesion.png" alt="Des gens devant un ordinateurs sur un bureau" class="img-rse">
+                        <div class="text-flags">
+                            <h2 class="french-title mt-25">Favoriser la cohésion entrepreneuriale</h2>
+                            <ul>
+                                <li>Favoriser les synergies et l’échange de bonnes pratiques en rejoignant les acteurs engagés du territoire partageant nos valeurs</li>
+                                <li>Adopter une politique de sélection de nos prestataires et de nos achats favorisant la proximité et les circuits courts</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,43 +153,43 @@
         </div>     
     </section>
     <footer>
-        <div class="container mt-100 container-footer">
-            <div class="row">
-                <div class="left-footer">
-                    <div class="group-logo-footer">
-                        <img class="logo-footer" src="images/Vector.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
-                        <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
-                        <ul>
-                            <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
-                            <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
-                            <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
-                        </ul>
-                    </div>
-                    <div class="disclaimer mt-25">
-                        <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
-                    </div>
-                    <div class="copyright">
-                        Copyright 2023 IMPAYRIUM SA
-                    </div>
+        <div class="container mt-100 container-footer row">
+            <div class="left-footer">
+                <div class="group-logo-footer">
+                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
+                    <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
                 </div>
-                <div class="infos-impayrium">
-                    <p class="title-contact">Contact</p>
-                    <div class="mt-25">
-                        <div class="align-icon">
-                            <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
-                            <a href="mailto:contact@impayrium.com?subject=Prise de contact" target="_blank" class="email">contact@impayrium.com</a>
-                        </div>
-                        <div class="align-icon marge-icon mt-25">
-                            <img src="images/localisation.png" alt="Icône de localisation" class="icon">
-                            <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
-                        </div>
+                <div class="disclaimer mt-25">
+                    <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
+                </div>
+                <div class="copyright">
+                    Copyright 2023 IMPAYRIUM SA
+                </div>
+            </div>
+            <div class="legal">
+                <ul>
+                    <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
+                    <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
+                    <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
+                </ul>
+            </div>
+            <div class="infos-impayrium">
+                <p class="title-contact">Contact</p>
+                <div class="mt-25">
+                    <div class="align-icon">
+                        <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
+                        <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+                    </div>
+                    <div class="align-icon marge-icon mt-25">
+                        <img src="images/localisation.png" alt="Icône de localisation" class="icon">
+                        <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.getElementById('burger')
+    const menu = document.getElementById('menu')
+
+    // Toggle the menu on burger click
+    burger.addEventListener('click', function(event) {
+        event.stopPropagation()
+        menu.classList.toggle('active')
+        burger.classList.toggle('active')
+    })
+
+document.addEventListener('click', function (event) { 
+    if (!burger.contains(event.target) && !menu.contains(event.target)) { 
+        menu.classList.remove('active')
+        burger.classList.remove('active')
+    }
+})
+})
+
+
+
 const btnConnexion = document.getElementById('connexion')
 btnConnexion.addEventListener('click', () => { 
     window.location.href = 'https://platform.impayrium.com/login'
