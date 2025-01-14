@@ -11,6 +11,7 @@ body{
 }
 /*Largeur maximale des éléments et centrage du container*/
 .container{
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -18,7 +19,7 @@ body{
 .text-center{
     text-align: center;
 }
-/*display flex sur toutes les .row et passage d'un élément en dessous quand la largeur dépasse 100%*/
+/*display flex sur toutes les row et passage d'un élément en dessous quand la largeur dépasse 100%*/
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +60,6 @@ h1{
     font-family: "Libre Bodoni", serif;
     font-size: 42px;
 }
-
 h2{
     font-family: "Libre Bodoni", serif;
     font-size: 32px;
@@ -74,50 +74,58 @@ h4{
 .color-blue{
     color: #5988E5;
 }
-.header-image { 
-    width: 100%; 
-    height: 890px;
-     background: url('images/image-banner.png') no-repeat center center/cover; 
-    }
+
 /*Barre de navigation*/
 .navbar-container{
     width:100%;
-    padding : 0.75rem 1.25rem 0.75rem 1.25rem;
+    padding : 12px 0 12px 0;
     display: flex;
     justify-content:space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    max-height: 60px;
+    max-height: 55px;
 }
-.logo-liens{
-    width:80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.group-logo{
+    margin-left: 20px;
 }
 .logo{
     height: 28px;
-    margin-left: 0.6rem ;
 }
 /* Style de base pour l'en-tête */
-.menu ul{
-    display:flex;
-}
-.menu ul li{
+.nav-list {
+    display: flex;
     list-style: none;
+  /*  justify-content: center;*/
+    margin: 0;
 }
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    margin: 4px 0;
+}
+
 .cta{
-    margin-left: 5rem;
-    text-decoration: none;
-    color:black;
-    font-weight: 600;
-}
-.cta-charte{
-    margin-left: 5rem;
-    text-decoration: none;
-    color:black;
-    font-weight: 600;
+    margin-left: 80px;
 }
 .btn{
     padding:12px 24px;
@@ -125,8 +133,8 @@ h4{
     align-items: center;
     border-color: white;
 }
-
 .btn-connexion{
+    margin-right: 20px;
     padding:12px 24px;
     letter-spacing: 2px;
     border: 1px solid;
@@ -142,18 +150,20 @@ h4{
 .btn-connexion:hover{
     opacity: 0.7;
 }
+
+/*Page bannière*/
 .banner-container{
     justify-content: space-between;
+    width:100%;
 }
 .banner-title{
-    width:33rem;
-    margin-top: -40rem;
-    margin-left: 10rem;
+    width:530px;
+    margin-top: 150px;
+    margin-left: 160px;
     gap: 16px;
-
 }
 .banner-img{
-    margin-top: -38rem;
+    margin-top: 150px;
 }
 /*style des boutons*/
 .btn-demo{
@@ -170,9 +180,9 @@ h4{
     display: inline-flex;
     fill: currentcolor;
     font-family: "Google Sans",Roboto,Arial,sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
-    height: 3rem;
+    height: 48px;
     justify-content: center;
     letter-spacing: .25px;
     line-height: normal;
@@ -190,17 +200,14 @@ h4{
     will-change: transform,opacity;
     z-index: 0;
 }
-
 .btn-demo:hover {
   background: #F6F9FE;
   color: #0B0D17;
 }
-
 .btn-demo:active {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
-
 .btn-demo:focus {
   outline: none;
   border: 2px solid #0B0D17;
@@ -208,14 +215,26 @@ h4{
 .transfer-title{
     font-size: 24px;
     font-weight: 500;
-    margin-top: -8rem;
-    margin-left: 10rem;
+    margin-top: 130px;
+    margin-left: 160px;
+}
+
+/*image de fond*/
+.header-image { 
+    margin-top: -890px;
+    width: auto; 
+    max-width: 100%;
+    height: 890px;
+    background: url('images/image-banner.png'); 
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir le conteneur */
+    background-position: center; /* Centre l'image dans le conteneur */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
 }
 
 /*Animation des drapeaux*/
 .flags{
     overflow: hidden;
-    margin-top: 3rem;
+    margin-top: 48px;
 }
 .float-startLeft {
     float: left !important;
@@ -391,12 +410,49 @@ h4{
     width: 100%; 
     height: 280px;
     background-image: linear-gradient(180deg,#E7EDFD,#FFFFFF);
-    }
-.flags-Lo{
-    overflow: hidden;
 }
-.container-gif-text{
-    align-items: flex-start;
+.titre-engagements{
+    margin-top: -250px;
+}
+.container-engagements{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.container-gif-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:600x 600px 600px;
+    justify-items: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+/*on place les éléments dans la grille*/
+
+.box-money{
+    grid-column: 1/2;
+}
+.box-text-money{
+    grid-column: 2/3;
+}
+.box-dollar{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.box-text-dollar{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.box-shield{
+    grid-column: 1/2;
+    grid-row: 3;
+}
+.box-text-shield{
+    grid-column: 2/3;
+    grid-row: 3;
 }
 .text-engagements{
     width:435px;
@@ -409,8 +465,8 @@ ul {
     text-align: left;
 } 
 ul li{
-   text-indent: -1.2em;
-   padding-left: 1.2em;
+   text-indent: -20px;
+   padding-left: 20px;
    line-height: 1.5;
 }
 ul li::marker { 
@@ -472,31 +528,31 @@ ul li::marker {
     background-image: linear-gradient(360deg,#E7EDFD,#FFFFFF);
 }
 .img-background-inversee{
-        width: 100%;
-        height: 880px; /* Définir la hauteur du conteneur */
-        background-image: url("images/image-inversee.png"); /* Chemin de l'image */
-        background-size: cover; /* Ajuste la taille de l'image pour couvrir le conteneur */
-        background-position: center; /* Centre l'image dans le conteneur */
-        background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    width: 100%;
+    height: 880px;
+    background-image: url("images/image-inversee.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .container-contact{
     border: 1px solid;
     margin-left: auto;
     margin-right: auto;
-    height: 29rem;
-    width: 50rem;
+    height: 465px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     border-radius: 8px;
-    margin-top: -63rem;
+    margin-top: -1000px;
     border-image: linear-gradient(to bottom, #5988E5, #E7E8EB)1;
 }
 .form-grid{
     display: grid;
-    grid-template-columns: 20em 20em;/*on crée deux colonnes qui vont occuper chacune la moitié du container*/
-    grid-template-rows:40px 40px 40px;/*on définit la hauteur des lignes*/
-    gap:100px;/*on espace les éléments de la grille*/
+    grid-template-columns: 320px 320px;
+    grid-template-rows:40px 40px 40px;
+    gap:100px;
 }
 /*on définit la place du label par rapport au champs*/
 .mp-label{
@@ -535,6 +591,7 @@ input{
     font-size: 20px;
     width:100%;
 }
+
 /*style des boutons*/
 .btn-contact{
     text-decoration: none;
@@ -570,27 +627,23 @@ input{
     will-change: transform,opacity;
     z-index: 0;
 }
-
 .btn-contact:hover {
   background: #F6F9FE;
   color: #0B0D17;
 }
-
 .btn-contact:active {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
-
 .btn:focus {
   outline: none;
   border: 2px solid #0B0D17;
 }
 .mp-bouton{
-    margin-top: 2rem;
+    margin-top: 32px;
     display:flex;
     justify-content:center;
 }
-
 .form-control{
     color : red
 }
@@ -608,57 +661,73 @@ input{
 
 /*Footer*/
 .container-footer{
-    justify-content: space-between;
-    align-items: first baseline;
     background-color: #D3DDF0;
-    height: 250px;
+    height: 270px;
     width: 100%;
-    margin-top: 18rem;
+    margin-top: 265px;
     opacity: 100%;
 }
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows:80px 80px 80px;
+    row-gap:10px;
+}
+.box-logo{
+    grid-column: 1/2;
+}
+.box-disclaimer{
+    grid-row: 2;
+    grid-column: 1/2;
+}
+.box-copyright{
+    grid-row: 3;
+    grid-column: 1/2;
+}
+.box-legal{
+    grid-column: 2/3;
+}
+.box-infos{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
 .group-logo-footer{
-    display: flex;
-    align-items: center;
+    margin-left: 35px;
+    margin-top: 16px;
 }
 .logo-footer{
-    margin-top: 1rem;
-    height: 24px;
-    margin-left: 2.2rem ;
-}
-.group-logo-footer ul li{
-    margin-top: 2.2rem;
-    list-style: none;
-    line-height: 1.6rem;
-    margin-left: 17rem;
+    height: 28px;
 }
 .legal{
-    margin-top: 2.2rem;
-    margin-right: 1rem;
+    margin-top: 24px;
+    margin-right: 16px;
+}
+.legal ul li{
+    margin: 0;
+    padding: 0;
 }
 .mentions{
     text-decoration: none;
     color: black;
+    line-height: 3;
 }
 .disclaimer{
     font-size: 12px;
-    width: 600px;
-    margin-left:2.2rem;
+    width: 90%;
+    margin-left:35px;
+    margin-top: 15px;
 }
 .copyright{
-    margin-left: 2.2rem;
-    margin-top: 1rem;
-}
-.left-footer{
-    margin-top: 2.2rem;
-    margin-right: 3rem;
+    margin-top: 36px;
+    margin-left: 35px;
 }
 .infos-impayrium{
-    margin-top: 2.2rem;
-    margin-right: 2.2rem;
-    width: 300px;
+    margin-top: 40px;
+    margin-right: 35px;
     border-left: 1px solid;
     border-color: #5988E5;
-    padding-left: 3rem;
+    padding-left: 35px;
 }
 .title-contact{
     font-weight: 600;
@@ -671,14 +740,13 @@ input{
     float: left;
 }
 .email{
-    margin-left: 1rem;
+    margin-left: 16px;
     text-decoration: none;
     color:black;
 }
 .adress{
-    margin-left: 1rem;
+    margin-left: 16px;
 }
-
 /*Page charte*/
 .background-valeurs{
     width: 100%; 
@@ -689,12 +757,12 @@ input{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -47rem;
-    width:50%;
+    margin-top: -750px;
+    width:600px;
 }
 .valeurs-title{
-    margin-top: -40rem;
-    width:50%;
+    margin-top: -640px;
+    width:600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -704,7 +772,7 @@ input{
     margin-right: auto;
 }
 .objectif-title{
-    margin-top: 15rem;
+    margin-top: 240px;
 }
 .img-rse {
     border-top-left-radius: 15px; /* Rayon du coin supérieur gauche */
@@ -730,130 +798,332 @@ input{
     align-items: center;
     background-image: linear-gradient(180deg,#E7EDFD,#FFFFFF);
 }
+
+/*première page responsive à 1380px, on passe le screenshot sous le titre*/
 @media (max-width:1380px){
-    .header-image { 
-        height: 800px;
-         background: url('images/image-banner.png') no-repeat center 100%/cover; 
-        }
     .banner-container{
         display: block;
         text-align: center;
     }
     .banner-title{
-        margin-top: -44rem;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .header-image{
+        margin-top: -980px;
     }
     .banner-img{
-        margin-top: 2rem;
+        margin-top:32px;
         width: 100%;
-
     }
     .transfer-title{
-        margin-top: 2rem;
+        margin-top: 32px;
         text-align: center;
-        margin-left: 0rem;
+        margin-left: 0;
     }
-    .flags{
-        margin-top: 0.96rem;
-    }
+}
+
+/*footer responsive, modif de l'agencement contacts et mentions à partir de 1280px*/
+@media (max-width: 1280px){
     .container-footer{
-        justify-content: space-around;
-        align-items: start;
-        height: 320px;
+        height: 400px;
+        margin-top: 235px;
     }
-    .disclaimer{
-        margin-top: 90px;
-    }
-    .copyright{
-        margin-top: 30px;
-    }
-    .legal{
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .mentions{
-        text-decoration: none;
-        color: black;
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:50px 150px 50px 30px;
+        row-gap:20px;
+        column-gap: 50px;
     }
     .infos-impayrium{
-        margin-top: -140px;
-        margin-left: 42rem;
-        width: 300px;
         border: none;
     }
-    
-}
-/*Style page charte*/
-@media(max-width : 1180px ){
-    .cta-charte{
-        margin-left: 20px;
+    .box-logo{
+        grid-column: 1/2;
     }
-    .nuage-title{
-        display: block;
+    .box-disclaimer{
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+    .box-copyright{
+        grid-row: 4;
+        grid-column: 1/2;
+    }
+    .box-legal{
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+    .box-infos{
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+    .legal{
+        margin-top: 24px;
+    }
+    .group-logo-footer{
+        margin-top: 25px;
+    }
+    .infos-impayrium{
+        margin-top: 40px;
+        border: none;
+    }
+    .copyright{
+        margin-top: 50px;
+    }
+}
+/*responsive page charte containers images/textes à partir de 1045px*/
+@media(max-width:1045px){
+.container-flag{
+    margin-top: 25px;
+    }
+}
+
+
+/* Page engagements responsive on passe les textes sous les gif à 925px*/
+@media (max-width: 925px){
+
+    .container-engagements{
         margin-left: auto;
         margin-right: auto;
-        width:550px;
+        height: auto;
+        width: 100%;
+        display: flex;
     }
-    .valeurs-title{
-        width:500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .objectif-title{
-        margin-top: 10rem;
-    }
-    .container-flag{
-        margin-top: 20px;
-    }
-}
-/* Styles en mode mobile */
-@media (max-width: 980px) {
-    .navbar-container{
+    .container-gif-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:600x 600px 600px 600px 600px 600px;
+        justify-items: center;
         align-items: center;
+    }
+    /*on place les éléments dans la grille*/
+    .box-money{
+        grid-column: 1/2;
+    }
+    .box-text-money{
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+    .box-dollar{
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+    .box-text-dollar{
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+    .box-shield{
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+    .box-text-shield{
+        grid-column: 1/2;
+        grid-row: 6;
+    }
+}
+/* Menu responsive à partir de 980px*/
+@media (max-width: 980px) {
+    .menu-toggle {
+        display: flex;
+        margin-right: 20px;
     }
     .btn-connexion{
         display: none;
     }
-    .logo-liens{
-        justify-content: space-between;
-        width: 100%;
-    }
-    .menu {
-        display: none; /* Cacher le menu normal */
-    }
-    .burger {
-        display: flex; /* Afficher le burger */
+    .nav-list {
         flex-direction: column;
-        justify-content: space-around;
-        width: 40px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .burger span {
-        background-color: #333;
+        background:black;
+        position: absolute;
+        top: 60px;
         width: 100%;
-        height: 3px;
-        border-radius: 2px;
+        display: none;
     }
-    /* Menu en mode mobile */
-    .menu.active {
+    .nav-list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .nav-list li a {
+        color: white;
+    }
+    .nav-list.show {
         display: flex;
-        background-color: none;
-        margin-top: 2.2rem;
     }
-    .menu.active ul {
-        flex-direction: column; /* Liste verticale */
-        align-items: start;
-    }
-    .menu.active ul li {
-        margin-top: 5px;
+    .cta{
+        margin-left: 0;
+
     }
     .btn{
+        padding:0px 0px;
         border: none;
     }
-    .burger.active { 
-        display: none;
+    
+}
+/*formulaire responsive à partir de 805px*/
+@media(max-width : 805px){
+    .container-contact{
+        height:auto;
+        width: 375px;
+    }
+    .form-grid{
+        display: grid;
+        grid-template-columns: 340px;
+        grid-template-rows:40px 40px 40px 40px 40px;
+        row-gap: 50px;
+    }
+    .box-nom{
+        grid-row:1;
+        grid-column: 1/2;
+    }
+    .box-prenom{
+        grid-row:2;
+        grid-column: 1/2;
+    }
+    .box-tel{
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+    .box-mail{
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+    .box-raison{
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+    input{
+        background-color: transparent;
+        border:none;
+        border-bottom: 1px solid;
+        border-color:black;
+        font-size: 20px;
+        width:100%;
+    }
+    
+
+}
+/* Footer responsive à partir de 760px*/
+@media(max-width : 760px){
+    .container-footer{
+        height: 650px;
+        margin-top: 235px;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:50px 150px 150px 50px 30px;
+        row-gap:20px;
+    }
+    .box-logo{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .box-disclaimer{
+        grid-row: 4;
+        grid-column: 1;
+    }
+    .box-copyright{
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .box-legal{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .box-infos{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .group-logo-footer{
+        margin-left: 15px;
+    }
+    .mentions{
+        margin-left: 15px;
+    }
+    .disclaimer{
+        width: 90%;
+        margin-left:15px;
+        margin-right: 15px;
+    }
+    .copyright{
+        margin-top: 75px;
+        margin-left: 15px;
+    }
+    .infos-impayrium{
+        margin-left: 15px;
+        padding-left: 0;
     }
 }
 
+/*screenshot responsive à partir de 600px*/
+@media(max-width : 600px){
+    .screenshot{
+        width: 370px;
+        height:auto;
+    }
+    .container-title-ONG{
+        width: 350px;
+    }
+    .text-ONG{
+        width: 350px;
+    }
+    .img-ONG{
+        margin-right: 0;
+    }
+    .bureau-ONG{
+        width: 360px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-engagements{
+        width:360px;
+    }
+    .gif{
+        width: 360px;
+        height: auto;
+    }
+    /*Page charte*/
+    .nuage-title{
+        width:360px;
+        margin-top: -800px;
+    }
+    .valeurs-title{
+        width:370px;
+        margin-top: -350px;
+    }
+    .container-flag{
+        margin-top: 25px;
+    }
+    .objectif-title{
+        margin-top: 150px;
+    }
+}
+
+/*titre accueil responsive à partir de 545px*/
+@media(max-width : 545px){
+    /*on définit taille des titres et police*/
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 16px;
+}
+.container-engagements{
+    width: 90%;
+}
+.banner-title{
+    width:370px;
+}
+.transfer-title{
+    font-size: 22px;
+}
+
+}

@@ -1,18 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.getElementById('burger')
-    const menu = document.getElementById('menu')
+    const menuToggle = document.querySelector('#mobile-menu');
+    const navList = document.querySelector('.nav-list');
 
     // Toggle the menu on burger click
-    burger.addEventListener('click', function(event) {
+    menuToggle.addEventListener('click', function(event) {
         event.stopPropagation()
-        menu.classList.toggle('active')
-        burger.classList.toggle('active')
+        navList.classList.toggle('show')
     })
 
 document.addEventListener('click', function (event) { 
-    if (!burger.contains(event.target) && !menu.contains(event.target)) { 
-        menu.classList.remove('active')
-        burger.classList.remove('active')
+    if (!menuToggle.contains(event.target) && !navList.contains(event.target)) { 
+        navList.classList.remove('show')
     }
 })
 })

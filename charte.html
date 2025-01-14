@@ -15,41 +15,36 @@
     <script type="module" src="index.js"></script>
 </head>
 <body>
-    <header id="accueil">
-        <div class="background-valeurs container">
-            <nav class="container">
-                <div class="navbar-container">
-                    <div class="logo-liens">
-                        <div>
-                            <img class="logo" src="images/Vector.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-1.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-2.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-3.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-4.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-5.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-6.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-7.svg" alt="logo Impayrium">
-                            <img class="logo" src="images/Vector-8.svg" alt="logo Impayrium">
-                        </div>
-                        <div class="menu" id="menu">
-                            <ul>
-                                <li><a href="index.html" class="btn cta-charte">Accueil</a></li>
-                                <li><a href="charte.html" class="btn cta-charte">Nos engagements</a></li>
-                                <li><a href="#contact" class="btn cta-charte">Contact</a></li>
-                            </ul>
-                        </div> 
-                        <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>   
-                    </div>
-                    <div>
-                        <button type="button" class="btn-connexion" id="connexion">Connexion</button>
-                    </div>
+    <header id="Accueil">
+        <div class="background-valeurs">
+        <nav class="container">
+            <div class="navbar-container">
+                <div class="group-logo">
+                    <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium ">
+                    <img class="logo" src="images/Vector-1.svg" alt="M de Impayrium">
+                    <img class="logo" src="images/Vector-2.svg" alt="P de Impayrium">
+                    <img class="logo" src="images/Vector-3.svg" alt="A de Impayrium">
+                    <img class="logo" src="images/Vector-4.svg" alt="Y de Impayrium">
+                    <img class="logo" src="images/Vector-5.svg" alt="R de Impayrium">
+                    <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium">
+                    <img class="logo" src="images/Vector-7.svg" alt="U de Impayrium">
+                    <img class="logo" src="images/Vector-8.svg" alt="M de Impayrium">
                 </div>
-            </nav>
-        </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="btn cta">Accueil</a></li>
+                        <li><a href="#contact" class="btn cta">Contact</a></li>
+                    </ul>
+                <div>
+                    <button type="button" class="btn-connexion" id="connexion">Connexion</button>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </div>
     </header>
     <section id="valeurs">
         <div class="container">
@@ -153,43 +148,45 @@
         </div>     
     </section>
     <footer>
-        <div class="container mt-100 container-footer row">
-            <div class="left-footer">
-                <div class="group-logo-footer">
-                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
-                </div>
-                <div class="disclaimer mt-25">
-                    <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
-                </div>
-                <div class="copyright">
-                    Copyright 2023 IMPAYRIUM SA
-                </div>
-            </div>
-            <div class="legal">
-                <ul>
-                    <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
-                    <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
-                    <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
-                </ul>
-            </div>
-            <div class="infos-impayrium">
-                <p class="title-contact">Contact</p>
-                <div class="mt-25">
-                    <div class="align-icon">
-                        <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
-                        <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+        <div class="container mt-100">
+            <div class="container-footer">
+                <div class="footer-grid">
+                    <div class="group-logo-footer box-logo">
+                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
                     </div>
-                    <div class="align-icon marge-icon mt-25">
-                        <img src="images/localisation.png" alt="Icône de localisation" class="icon">
-                        <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
+                    <div class="disclaimer box-disclaimer">
+                        <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
+                    </div>
+                    <div class="copyright box-copyright">
+                        Copyright 2023 IMPAYRIUM SA
+                    </div>
+                    <div class="legal box-legal">
+                        <ul>
+                            <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
+                            <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
+                            <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="infos-impayrium box-infos">
+                        <p class="title-contact">Contact</p>
+                        <div class="mt-25">
+                            <div class="align-icon">
+                                <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
+                                <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+                            </div>
+                            <div class="align-icon marge-icon mt-25">
+                                <img src="images/localisation.png" alt="Icône de localisation" class="icon">
+                                <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
-    <title>Connecter le monde</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Impayrium</title>
     <meta name="description" content="Impayrium est une plateforme de transferts internationaux">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,43 +12,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" type="module"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-    <header class="text-center row" id="accueil">
-        <div class="header-image container">
-            <nav class="container">
-                <div class="navbar-container">
-                    <div class="logo-liens">
-                        <div>
-                            <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium ">
-                            <img class="logo" src="images/Vector-1.svg" alt="M de Impayrium">
-                            <img class="logo" src="images/Vector-2.svg" alt="P de Impayrium">
-                            <img class="logo" src="images/Vector-3.svg" alt="A de Impayrium">
-                            <img class="logo" src="images/Vector-4.svg" alt="Y de Impayrium">
-                            <img class="logo" src="images/Vector-5.svg" alt="R de Impayrium">
-                            <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium">
-                            <img class="logo" src="images/Vector-7.svg" alt="U de Impayrium">
-                            <img class="logo" src="images/Vector-8.svg" alt="M de Impayrium">
-                        </div>    
-                        <div class="menu" id="menu">
-                            <ul>
-                                <li><a href="charte.html" class="btn cta">Nos engagements</a></li>
-                                <li><a href="#contact" class="btn cta">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="burger" id="burger"> <!-- Menu burger pour les petits écrans -->
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div>
-                        <button type="button" class="btn-connexion" id="connexion">Connexion</button>
-                    </div>
+    <header id="Accueil">
+        <nav class="container">
+            <div class="navbar-container">
+                <div class="group-logo">
+                    <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium ">
+                    <img class="logo" src="images/Vector-1.svg" alt="M de Impayrium">
+                    <img class="logo" src="images/Vector-2.svg" alt="P de Impayrium">
+                    <img class="logo" src="images/Vector-3.svg" alt="A de Impayrium">
+                    <img class="logo" src="images/Vector-4.svg" alt="Y de Impayrium">
+                    <img class="logo" src="images/Vector-5.svg" alt="R de Impayrium">
+                    <img class="logo" src="images/Vector-6.svg" alt="I de Impayrium">
+                    <img class="logo" src="images/Vector-7.svg" alt="U de Impayrium">
+                    <img class="logo" src="images/Vector-8.svg" alt="M de Impayrium">
                 </div>
-            </nav>
-        </div>
+                    <ul class="nav-list">
+                        <li><a href="charte.html" class="btn cta">Nos engagements</a></li>
+                        <li><a href="#contact" class="btn cta">Contact</a></li>
+                    </ul>
+                <div>
+                    <button type="button" class="btn-connexion" id="connexion">Connexion</button>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
     </header>
     <section id="banner">
         <div class="container">
@@ -56,11 +50,11 @@
                 <div class="banner-title col-50">
                     <h1>  La plateforme de transferts internationaux qui s'adapte à vos besoins</h1>
                     <p class="mt-25">Bien plus qu’un simple moyen de transférer de l’argent, Impayrium impact positivement le monde qui l’entoure tout en offrant des transferts internationaux rapides, sécurisés et économiques</p>
-                    <button type="button" class="btn-contact mt-25" id="demo">Demandez votre démo</button>
+                    <button type="button" class="btn-demo mt-25" id="demo">Demandez votre démo</button>
                     
                 </div>
                 <div class="banner-img col-50">
-                    <img src="images/screen-shot.png" alt="Screenshot plateforme Impayrium">
+                    <img src="images/screen-shot.png" class="screenshot" alt="Screenshot plateforme Impayrium">
                 </div>
             </div>
             <div class="transfer-title">Réalisez vos transferts de fonds dans plus de <span class="color-blue">130 devises</span></div>
@@ -99,118 +93,132 @@
                         <div class="horizontal-scrolling-items__group__item item_14"></div>      
                     </div>
                 </div>
+                <div class="horizontal-scrolling-itemsMed float-startRight">
+                    <div class="horizontal-scrolling-items__group">
+                        <div class="horizontal-scrolling-items__group__item item_15"></div>
+                        <div class="horizontal-scrolling-items__group__item item_16"></div>
+                        <div class="horizontal-scrolling-items__group__item item_17"></div>
+                        <div class="horizontal-scrolling-items__group__item item_18"></div>
+                        <div class="horizontal-scrolling-items__group__item item_19"></div>
+                        <div class="horizontal-scrolling-items__group__item item_20"></div>
+                        <div class="horizontal-scrolling-items__group__item item_21"></div>
+                        <div class="horizontal-scrolling-items__group__item item_22"></div>
+                        <div class="horizontal-scrolling-items__group__item item_23"></div>
+                        <div class="horizontal-scrolling-items__group__item item_24"></div>
+                        <div class="horizontal-scrolling-items__group__item item_25"></div>
+                        <div class="horizontal-scrolling-items__group__item item_26"></div>
+                        <div class="horizontal-scrolling-items__group__item item_27"></div>
+                        <div class="horizontal-scrolling-items__group__item item_28"></div>      
+                    </div>
+                    <div class="horizontal-scrolling-items__group">
+                        <div class="horizontal-scrolling-items__group__item item_15"></div>
+                        <div class="horizontal-scrolling-items__group__item item_16"></div>
+                        <div class="horizontal-scrolling-items__group__item item_17"></div>
+                        <div class="horizontal-scrolling-items__group__item item_18"></div>
+                        <div class="horizontal-scrolling-items__group__item item_19"></div>
+                        <div class="horizontal-scrolling-items__group__item item_20"></div>
+                        <div class="horizontal-scrolling-items__group__item item_21"></div>
+                        <div class="horizontal-scrolling-items__group__item item_22"></div>
+                        <div class="horizontal-scrolling-items__group__item item_23"></div>
+                        <div class="horizontal-scrolling-items__group__item item_24"></div>
+                        <div class="horizontal-scrolling-items__group__item item_25"></div>
+                        <div class="horizontal-scrolling-items__group__item item_26"></div>
+                        <div class="horizontal-scrolling-items__group__item item_27"></div>
+                        <div class="horizontal-scrolling-items__group__item item_28"></div>      
+                    </div>
+                </div>
+                <div class="horizontal-scrolling-itemsHi-Lo float-startLeft">
+                    <div class="horizontal-scrolling-items__group">
+                        <div class="horizontal-scrolling-items__group__item item_29"></div>
+                        <div class="horizontal-scrolling-items__group__item item_30"></div>
+                        <div class="horizontal-scrolling-items__group__item item_31"></div>
+                        <div class="horizontal-scrolling-items__group__item item_32"></div>
+                        <div class="horizontal-scrolling-items__group__item item_33"></div>
+                        <div class="horizontal-scrolling-items__group__item item_34"></div>
+                        <div class="horizontal-scrolling-items__group__item item_35"></div>
+                        <div class="horizontal-scrolling-items__group__item item_36"></div>
+                        <div class="horizontal-scrolling-items__group__item item_37"></div>
+                        <div class="horizontal-scrolling-items__group__item item_38"></div>
+                        <div class="horizontal-scrolling-items__group__item item_39"></div>
+                        <div class="horizontal-scrolling-items__group__item item_40"></div>
+                        <div class="horizontal-scrolling-items__group__item item_41"></div>
+                        <div class="horizontal-scrolling-items__group__item item_42"></div>      
+                    </div>
+                    <div class="horizontal-scrolling-items__group">
+                        <div class="horizontal-scrolling-items__group__item item_29"></div>
+                        <div class="horizontal-scrolling-items__group__item item_30"></div>
+                        <div class="horizontal-scrolling-items__group__item item_31"></div>
+                        <div class="horizontal-scrolling-items__group__item item_32"></div>
+                        <div class="horizontal-scrolling-items__group__item item_33"></div>
+                        <div class="horizontal-scrolling-items__group__item item_34"></div>
+                        <div class="horizontal-scrolling-items__group__item item_35"></div>
+                        <div class="horizontal-scrolling-items__group__item item_36"></div>
+                        <div class="horizontal-scrolling-items__group__item item_37"></div>
+                        <div class="horizontal-scrolling-items__group__item item_38"></div>
+                        <div class="horizontal-scrolling-items__group__item item_39"></div>
+                        <div class="horizontal-scrolling-items__group__item item_40"></div>
+                        <div class="horizontal-scrolling-items__group__item item_41"></div>
+                        <div class="horizontal-scrolling-items__group__item item_42"></div>      
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section id="engagements">
-        <div class="background-engagements flags-Lo container">
-            <div class="horizontal-scrolling-itemsMed float-startRight">
-                <div class="horizontal-scrolling-items__group">
-                    <div class="horizontal-scrolling-items__group__item item_15"></div>
-                    <div class="horizontal-scrolling-items__group__item item_16"></div>
-                    <div class="horizontal-scrolling-items__group__item item_17"></div>
-                    <div class="horizontal-scrolling-items__group__item item_18"></div>
-                    <div class="horizontal-scrolling-items__group__item item_19"></div>
-                    <div class="horizontal-scrolling-items__group__item item_20"></div>
-                    <div class="horizontal-scrolling-items__group__item item_21"></div>
-                    <div class="horizontal-scrolling-items__group__item item_22"></div>
-                    <div class="horizontal-scrolling-items__group__item item_23"></div>
-                    <div class="horizontal-scrolling-items__group__item item_24"></div>
-                    <div class="horizontal-scrolling-items__group__item item_25"></div>
-                    <div class="horizontal-scrolling-items__group__item item_26"></div>
-                    <div class="horizontal-scrolling-items__group__item item_27"></div>
-                    <div class="horizontal-scrolling-items__group__item item_28"></div>      
-                </div>
-                <div class="horizontal-scrolling-items__group">
-                    <div class="horizontal-scrolling-items__group__item item_15"></div>
-                    <div class="horizontal-scrolling-items__group__item item_16"></div>
-                    <div class="horizontal-scrolling-items__group__item item_17"></div>
-                    <div class="horizontal-scrolling-items__group__item item_18"></div>
-                    <div class="horizontal-scrolling-items__group__item item_19"></div>
-                    <div class="horizontal-scrolling-items__group__item item_20"></div>
-                    <div class="horizontal-scrolling-items__group__item item_21"></div>
-                    <div class="horizontal-scrolling-items__group__item item_22"></div>
-                    <div class="horizontal-scrolling-items__group__item item_23"></div>
-                    <div class="horizontal-scrolling-items__group__item item_24"></div>
-                    <div class="horizontal-scrolling-items__group__item item_25"></div>
-                    <div class="horizontal-scrolling-items__group__item item_26"></div>
-                    <div class="horizontal-scrolling-items__group__item item_27"></div>
-                    <div class="horizontal-scrolling-items__group__item item_28"></div>      
-                </div>
-            </div>
-            <div class="horizontal-scrolling-itemsHi-Lo float-startLeft">
-                <div class="horizontal-scrolling-items__group">
-                    <div class="horizontal-scrolling-items__group__item item_29"></div>
-                    <div class="horizontal-scrolling-items__group__item item_30"></div>
-                    <div class="horizontal-scrolling-items__group__item item_31"></div>
-                    <div class="horizontal-scrolling-items__group__item item_32"></div>
-                    <div class="horizontal-scrolling-items__group__item item_33"></div>
-                    <div class="horizontal-scrolling-items__group__item item_34"></div>
-                    <div class="horizontal-scrolling-items__group__item item_35"></div>
-                    <div class="horizontal-scrolling-items__group__item item_36"></div>
-                    <div class="horizontal-scrolling-items__group__item item_37"></div>
-                    <div class="horizontal-scrolling-items__group__item item_38"></div>
-                    <div class="horizontal-scrolling-items__group__item item_39"></div>
-                    <div class="horizontal-scrolling-items__group__item item_40"></div>
-                    <div class="horizontal-scrolling-items__group__item item_41"></div>
-                    <div class="horizontal-scrolling-items__group__item item_42"></div>      
-                </div>
-                <div class="horizontal-scrolling-items__group">
-                    <div class="horizontal-scrolling-items__group__item item_29"></div>
-                    <div class="horizontal-scrolling-items__group__item item_30"></div>
-                    <div class="horizontal-scrolling-items__group__item item_31"></div>
-                    <div class="horizontal-scrolling-items__group__item item_32"></div>
-                    <div class="horizontal-scrolling-items__group__item item_33"></div>
-                    <div class="horizontal-scrolling-items__group__item item_34"></div>
-                    <div class="horizontal-scrolling-items__group__item item_35"></div>
-                    <div class="horizontal-scrolling-items__group__item item_36"></div>
-                    <div class="horizontal-scrolling-items__group__item item_37"></div>
-                    <div class="horizontal-scrolling-items__group__item item_38"></div>
-                    <div class="horizontal-scrolling-items__group__item item_39"></div>
-                    <div class="horizontal-scrolling-items__group__item item_40"></div>
-                    <div class="horizontal-scrolling-items__group__item item_41"></div>
-                    <div class="horizontal-scrolling-items__group__item item_42"></div>      
-                </div>
-            </div>
+        <div class="container">
+            <div class="header-image"></div>
+            <div class="background-engagements"></div>
+        </div>
+        <div class="container titre-engagements">
             <p class="text-center color-blue mt-100">NOS ENGAGEMENTS</p>
             <h1 class="text-center mt-25">Simplifiez <span class="color-blue">-</span> Economisez <span class="color-blue">-</span> Sécurisez</h1>
-        </div>
-        <div class="row container mt-75 container-gif-text">
-            <div class="col-50 text-center">
-                <img src="images/gif-moneybag.gif" alt="image animée d'un sac de pièces">
-                <div class="mt-50 text-engagements">
-                    <h1>Des cours de change attractifs</h1>
-                    <p class="mt-25">Grâce à:</p>
-                    <ul class="inside-list">
-                        <li>Des marges fixes et minimes sur vos opérations</li>
-                        <li>La recherche constante de nouveaux partenaires solides et compétitifs</li>
-                    </ul>
-                    <p>Optimisez vos coûts de transfert avec Impayrium.</p>
-                </div>
-                <img src="images/gif-shield.gif" alt="Un bouclier avec un cadenas animé" class="mt-50">
-            </div>
-            <div class="col-50 text-center">
-                <div class="text-engagements">
-                    <h1>Supprimez les frais, générez du cashback</h1>
-                    <p class="mt-25">Vous bénéficiez d'une solution sans frais cachés:</p>
-                    <ul class="inside-list">
-                        <li>Pas de frais d'ouverture ou de fermeture de compte</li>
-                        <li>Pas de commission de mouvement</li>
-                        <li>Pas de frais de transfert</li>
-                        <li>Aucun engagement</li>
-                    </ul>
-                    <p>Et vous profitez de comptes de collecte rémunérés en EUR, USD et GBP.</p>
-                </div>
-                <img src="images/gif-dollar.gif" alt="Le symbole dollar avec une animation recyclable" class="mt-50">   
-                <div class="text-engagements mt-50">
-                    <h1>Opérez en toute confiance</h1>
-                    <p class="mt-25">La sécurité et la fiabilité sont au cœur du projet IMPAYRIUM:</p>
-                    <ul>
-                        <li>Système de contrôle simple ou double des opérations selon votre politique interne</li>
-                        <li>Profils d’utilisateurs modulables</li>
-                        <li>Système d’accès à la plateforme sécurisé</li>
-                        <li>Plateforme labelisée MyCyberCheck</li>
-                    </ul>
+            <div class="container mt-75 container-engagements">
+                <div class="container-gif-grid">
+                    <div class="box-money text-center">
+                        <img src="images/gif-moneybag.gif" class="gif" alt="image animée d'un sac de pièces">
+                    </div>
+                    <div class="box-money-text text-center">
+                        <div class="text-engagements mt-50">
+                            <h1>Supprimez les frais, générez du cashback</h1>
+                            <p class="mt-25">Vous bénéficiez d'une solution sans frais cachés:</p>
+                            <ul class="inside-list">
+                                <li>Pas de frais d'ouverture ou de fermeture de compte</li>
+                                <li>Pas de commission de mouvement</li>
+                                <li>Pas de frais de transfert</li>
+                                <li>Aucun engagement</li>
+                            </ul>
+                            <p>Et vous profitez de comptes de collecte rémunérés en EUR, USD et GBP.</p>
+                        </div>
+                    </div>
+                    <div class="box-dollar-text text-center">
+                        <div class="text-engagements mt-50">
+                            <h1>Des cours de change attractifs</h1>
+                            <p class="mt-25">Grâce à:</p>
+                            <ul class="inside-list">
+                                <li>Des marges fixes et minimes sur vos opérations</li>
+                                <li>La recherche constante de nouveaux partenaires solides et compétitifs</li>
+                            </ul>
+                            <p>Optimisez vos coûts de transfert avec Impayrium.</p>
+                        </div>
+                    </div>
+                    <div class="box-dollar text-center">
+                        <img src="images/gif-dollar.gif" alt="Le symbole dollar avec une animation recyclable" class="mt-50 gif">   
+                    </div>
+                    <div class="box-shield text-center">
+                        <img src="images/gif-shield.gif" alt="Un bouclier avec un cadenas animé" class="mt-50 gif">
+                    </div>
+                    <div class="box-shield-text text-center">
+                        <div class="text-engagements mt-50">
+                            <h1>Opérez en toute confiance</h1>
+                            <p class="mt-25">La sécurité et la fiabilité sont au cœur du projet IMPAYRIUM:</p>
+                            <ul>
+                                <li>Système de contrôle simple ou double des opérations selon votre politique interne</li>
+                                <li>Profils d’utilisateurs modulables</li>
+                                <li>Système d’accès à la plateforme sécurisé</li>
+                                <li>Plateforme labelisée MyCyberCheck</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,7 +234,7 @@
             </div>
             <div class="row mt-100 bloc-ONG">
                 <div class="img-ONG">
-                    <img src="images/burau-Ong.png" alt="Image d'une personne assise à un bureau devant un ordinateur avec un casque audio">
+                    <img src="images/burau-Ong.png" class="bureau-ONG" alt="Image d'une personne assise à un bureau devant un ordinateur avec un casque audio" >
                 </div>
                 <div class="text-ONG">
                     <h1 class="mt-25">La justification des dépenses</h1>
@@ -295,43 +303,45 @@
         </div>     
     </section>
     <footer>
-        <div class="container mt-100 container-footer row">
-            <div class="left-footer">
-                <div class="group-logo-footer">
-                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
-                    <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
-                </div>
-                <div class="disclaimer mt-25">
-                    <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
-                </div>
-                <div class="copyright">
-                    Copyright 2023 IMPAYRIUM SA
-                </div>
-            </div>
-            <div class="legal">
-                <ul>
-                    <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
-                    <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
-                    <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
-                </ul>
-            </div>
-            <div class="infos-impayrium">
-                <p class="title-contact">Contact</p>
-                <div class="mt-25">
-                    <div class="align-icon">
-                        <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
-                        <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+        <div class="container mt-100">
+            <div class="container-footer">
+                <div class="footer-grid">
+                    <div class="group-logo-footer box-logo">
+                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-1.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-2.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-3.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-4.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-5.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-6.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-7.svg" alt="logo Impayrium">
+                        <img class="logo-footer" src="images/Vector-8.svg" alt="logo Impayrium">
                     </div>
-                    <div class="align-icon marge-icon mt-25">
-                        <img src="images/localisation.png" alt="Icône de localisation" class="icon">
-                        <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
+                    <div class="disclaimer box-disclaimer">
+                        <p>IMPAYRIUM’s payment and foreign currency exchange services are provided by Ebury Partners NV/SA. IMPAYRIUM is partnered with Ebury Partners Belgium NV/SA as an EEA Agent. Ebury Partners Belgium NV/SA is authorised and regulated by the National Bank of Belgium as a Payment Institution under the Act of 11 March 2018, registered with the Crossroads Bank for Enterprises under number 0681.746.187.</p>
+                    </div>
+                    <div class="copyright box-copyright">
+                        Copyright 2023 IMPAYRIUM SA
+                    </div>
+                    <div class="legal box-legal">
+                        <ul>
+                            <li><a href="images/Mentions-legales.pdf" target="_blank" class="mentions">Mentions légales</a></li>
+                            <li><a href="images/Politique-de-confidentialite.pdf" target="_blank" class="mentions">Politique de confidentialité</a></li>
+                            <li><a href="images/CGU-Impayrium.pdf" target="_blank" class="mentions">Conditions générales d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="infos-impayrium box-infos">
+                        <p class="title-contact">Contact</p>
+                        <div class="mt-25">
+                            <div class="align-icon">
+                                <img src="images/enveloppe.png" alt="Icône enveloppe" class="icon">
+                                <a href="mailto:contact@impayrium.com?subject=Prise%20de%20contact" class="email">contact@impayrium.com</a>
+                            </div>
+                            <div class="align-icon marge-icon mt-25">
+                                <img src="images/localisation.png" alt="Icône de localisation" class="icon">
+                                <p class="adress">229 Rue Saint-Honore <br>75001 PARIS</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
