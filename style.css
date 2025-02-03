@@ -774,6 +774,9 @@ input{
 .objectif-title{
     margin-top: 240px;
 }
+.gouvernance{
+    width : 600px;
+}
 .img-rse {
     border-top-left-radius: 15px; /* Rayon du coin supérieur gauche */
     border-top-right-radius: 15px; /* Rayon du coin supérieur droit */
@@ -790,7 +793,7 @@ input{
 }
 .container-flag{
     width: 348px;
-    height:700px;
+    height:400px;
     border: 1px solid;
     border-color: #5988E5;
     border-radius: 5%;
