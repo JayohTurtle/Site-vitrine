@@ -44,6 +44,27 @@ bouton.addEventListener('click', (event)=>{
     event.preventDefault()
     //on appelle la fonction vérifier champs
     verifierChamps()
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+        alert("Veuillez compléter le CAPTCHA.");
+        return;
+    }
+
+    const formData = new FormData(this);
+    formData.append('g-recaptcha-response', recaptchaResponse);
+
+    fetch('https://votre-api-endpoint', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Succès:', data);
+    })
+    .catch((error) => {
+        console.error('Erreur:', error);
+    });
 })
 
 //on crée les fonctions
