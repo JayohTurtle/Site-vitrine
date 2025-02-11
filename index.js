@@ -29,7 +29,7 @@ const btnDemo = document.getElementById('demo')
 
 //on récupère l'emplacement du formulaire
 const form = document.getElementById('form')
-//on récupére les champs email et téléphone du formulaire
+//on récupére les champs du formulaire
 const telephone = document.getElementById('telephone')
 const email = document.getElementById('email')
 const nom = document.getElementById('nom')
@@ -39,11 +39,19 @@ const raison = document.getElementById('raison')
 
 //on crée les évènements
 //on vérifie la validité des champs à la fin quand on clique sur le submit
-const bouton = document.querySelector('.btn-contact')
-bouton.addEventListener('click', (event)=>{
-    event.preventDefault()
-    //on appelle la fonction vérifier champs
-    verifierChamps()
+// Sélection du bouton
+const bouton = document.querySelector('.btn-contact');
+
+bouton.addEventListener('click', (event) => {
+    event.preventDefault(); // Empêche l'envoi par défaut
+
+    const form = event.target.closest('form'); 
+    if (!form) {
+        console.error("Formulaire non trouvé !");
+        return;
+    }
+
+    verifierChamps(); // Vérifie si les champs sont valides
 
     const recaptchaResponse = grecaptcha.getResponse();
     if (recaptchaResponse.length === 0) {
@@ -51,8 +59,12 @@ bouton.addEventListener('click', (event)=>{
         return;
     }
 
-    const formData = new FormData(this);
+    const formData = new FormData(form);
     formData.append('g-recaptcha-response', recaptchaResponse);
+
+    console.log([...formData]); // Débogage : voir les données envoyées
+
+    bouton.disabled = true; // Désactiver le bouton pour éviter plusieurs envois
 
     fetch('https://votre-api-endpoint', {
         method: 'POST',
@@ -61,11 +73,17 @@ bouton.addEventListener('click', (event)=>{
     .then(response => response.json())
     .then(data => {
         console.log('Succès:', data);
+        alert("Votre formulaire a bien été envoyé !");
+        form.reset(); // Réinitialise le formulaire
+        grecaptcha.reset(); // Réinitialise le CAPTCHA
     })
     .catch((error) => {
         console.error('Erreur:', error);
+    })
+    .finally(() => {
+        bouton.disabled = false; // Réactiver le bouton
     });
-})
+});
 
 //on crée les fonctions
 /**
